@@ -1,0 +1,11 @@
+Id,Specialty,Name,Email,Dedicated Space in Office,Office Id,Home Office
+1,Pediatric Anesthesiologist,Dr. Tiger TestField,t.testfield@example-hospital.test,yes,1100,no
+2,Emergency Medicine Physician,Dr. Bear SampleData,b.sampledata@example-hospital.test,no,,no
+3,Neonatal Pharmacist,Dr. Robin MockUser,r.mockuser@example-hospital.test,yes,1101,no
+4,Maternal-Fetal Medicine Specialist,Dr. Wolf DemoDoc,w.demodoc@example-hospital.test,yes,1102,yes
+5,Cardiac Nurse Practitioner,Fox PlaceholderNP,f.placeholder@example-hospital.test,no,,no
+6,Pediatric Cardiologist,Dr. Hawk TestHeart,h.testheart@example-hospital.test,yes,1103,yes
+7,Orthopedic Fellow,Dr. Raven SampleBone,r.samplebone@example-hospital.test,yes,1104,yes
+8,Pediatric Oncologist,Dr. Falcon MockCancer,f.mockcancer@example-hospital.test,yes,1105,yes
+9,Neuropsychologist,Dr. Dolphin TestBrain,d.testbrain@example-hospital.test,yes,1106,yes
+10,Pediatric Ophthalmologist,Dr. Eagle SampleEye,e.sampleeye@example-hospital.test,no,,no

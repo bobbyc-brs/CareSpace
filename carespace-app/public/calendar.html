@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareSpace Calendar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1px;
+            background-color: #e5e7eb;
+        }
+        .calendar-day {
+            background-color: white;
+            min-height: 120px;
+            padding: 8px;
+            position: relative;
+        }
+        .calendar-day.other-month {
+            background-color: #f9fafb;
+            color: #9ca3af;
+        }
+        .calendar-day.today {
+            background-color: #eff6ff;
+            border: 2px solid #3b82f6;
+        }
+        .booking-item {
+            font-size: 0.75rem;
+            padding: 2px 4px;
+            margin: 1px 0;
+            border-radius: 3px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .booking-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .booking-clinical { background-color: #fef3c7; color: #92400e; }
+        .booking-education { background-color: #dbeafe; color: #1e40af; }
+        .booking-admin { background-color: #dcfce7; color: #166534; }
+        .booking-research { background-color: #f3e8ff; color: #7c3aed; }
+        .booking-public { background-color: #fce7f3; color: #be185d; }
+        .booking-surgical { background-color: #fef2f2; color: #dc2626; }
+        .booking-diagnostic { background-color: #ecfdf5; color: #047857; }
+        .booking-support { background-color: #fffbeb; color: #d97706; }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 0;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .fade-in {
+            animation: fadeIn 0.3s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-calendar-alt text-3xl text-blue-600"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h1 class="text-2xl font-bold text-gray-900">CareSpace Calendar</h1>
+                        <p class="text-sm text-gray-500">View bookings and space availability</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/" class="text-blue-600 hover:text-blue-800 font-medium">
+                        <i class="fas fa-arrow-left mr-2"></i>Back to Dashboard
+                    </a>
+                    <a href="/chatbot.html" class="text-green-600 hover:text-green-800 font-medium">
+                        <i class="fas fa-robot mr-2"></i>Chatbot
+                    </a>
+                    <div id="server-status" class="flex items-center">
+                        <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-sm text-gray-600">Server Online</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Calendar Controls -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <button id="prev-month" class="p-2 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-chevron-left text-gray-600"></i>
+                    </button>
+                    <h2 id="current-month" class="text-xl font-semibold text-gray-900">July 2025</h2>
+                    <button id="next-month" class="p-2 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-chevron-right text-gray-600"></i>
+                    </button>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="today-btn" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                        Today
+                    </button>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm text-gray-600">Filter:</span>
+                        <select id="category-filter" class="border border-gray-300 rounded-lg px-3 py-1 text-sm">
+                            <option value="">All Categories</option>
+                            <option value="Clinical">Clinical</option>
+                            <option value="Education">Education</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Research">Research</option>
+                            <option value="Public">Public</option>
+                            <option value="Surgical">Surgical</option>
+                            <option value="Diagnostic">Diagnostic</option>
+                            <option value="Support">Support</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calendar -->
+        <div class="bg-white rounded-lg shadow-sm">
+            <!-- Calendar Header -->
+            <div class="grid grid-cols-7 gap-px bg-gray-200">
+                <div class="bg-gray-50 p-3 text-center font-medium text-gray-700">Sun</div>
+                <div class="bg-gray-50 p-3 text-center font-medium text-gray-700">Mon</div>
+                <div class="bg-gray-50 p-3 text-center font-medium text-gray-700">Tue</div>
+                <div class="bg-gray-50 p-3 text-center font-medium text-gray-700">Wed</div>
+                <div class="bg-gray-50 p-3 text-center font-medium text-gray-700">Thu</div>
+                <div class="bg-gray-50 p-3 text-center font-medium text-gray-700">Fri</div>
+                <div class="bg-gray-50 p-3 text-center font-medium text-gray-700">Sat</div>
+            </div>
+            
+            <!-- Calendar Grid -->
+            <div id="calendar-grid" class="calendar-grid">
+                <!-- Calendar days will be generated here -->
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="mt-6 bg-white rounded-lg shadow-sm p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Category Legend</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-4 h-4 bg-yellow-200 rounded"></div>
+                    <span class="text-sm text-gray-700">Clinical</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div class="w-4 h-4 bg-blue-200 rounded"></div>
+                    <span class="text-sm text-gray-700">Education</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div class="w-4 h-4 bg-green-200 rounded"></div>
+                    <span class="text-sm text-gray-700">Admin</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div class="w-4 h-4 bg-purple-200 rounded"></div>
+                    <span class="text-sm text-gray-700">Research</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div class="w-4 h-4 bg-pink-200 rounded"></div>
+                    <span class="text-sm text-gray-700">Public</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div class="w-4 h-4 bg-red-200 rounded"></div>
+                    <span class="text-sm text-gray-700">Surgical</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div class="w-4 h-4 bg-emerald-200 rounded"></div>
+                    <span class="text-sm text-gray-700">Diagnostic</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div class="w-4 h-4 bg-orange-200 rounded"></div>
+                    <span class="text-sm text-gray-700">Support</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Booking Details Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content fade-in">
+            <div class="flex justify-between items-center p-6 border-b border-gray-200">
+                <h3 id="modal-title" class="text-lg font-semibold text-gray-900">Booking Details</h3>
+                <button id="close-modal" class="text-gray-400 hover:text-gray-600">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="modal-content" class="p-6">
+                <!-- Modal content will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="calendar.js"></script>
+</body>
+</html> 

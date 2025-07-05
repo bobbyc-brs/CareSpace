@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Chatbot - CareSpace</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .chat-container {
+            height: calc(100vh - 200px);
+        }
+        .message-bubble {
+            animation: slideIn 0.3s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .typing-indicator {
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-robot text-3xl text-blue-600"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h1 class="text-2xl font-bold text-gray-900">Doctor Chatbot</h1>
+                        <p class="text-sm text-gray-500">AI-powered medical consultation</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/" class="text-blue-600 hover:text-blue-800 font-medium">
+                        <i class="fas fa-arrow-left mr-2"></i>Back to Dashboard
+                    </a>
+                    <a href="/calendar.html" class="text-green-600 hover:text-green-800 font-medium">
+                        <i class="fas fa-calendar-alt mr-2"></i>Calendar
+                    </a>
+                    <div id="server-status" class="flex items-center">
+                        <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-sm text-gray-600">Server Online</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Doctor Profile Card -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-lg shadow-sm p-6 sticky top-8">
+                    <div class="text-center mb-6">
+                        <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-user-md text-3xl text-white"></i>
+                        </div>
+                        <h2 id="doctor-name" class="text-xl font-semibold text-gray-900">Loading...</h2>
+                        <p id="doctor-specialty" class="text-blue-600 font-medium">Loading specialty...</p>
+                        <p id="doctor-email" class="text-gray-500 text-sm mt-1">Loading email...</p>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Office Status:</span>
+                            <span id="office-status" class="px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                Loading...
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Home Office:</span>
+                            <span id="home-office" class="px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                Loading...
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Office ID:</span>
+                            <span id="office-id" class="text-sm text-gray-900">Loading...</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <button id="new-doctor-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                            <i class="fas fa-random mr-2"></i>Get New Doctor
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Interface -->
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-lg shadow-sm">
+                    <!-- Chat Header -->
+                    <div class="border-b border-gray-200 p-4">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Care Space AI</h3>
+                                <p class="text-sm text-gray-500">Book spaces and get medical consultation assistance</p>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs text-gray-500">AI Assistant</span>
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Messages -->
+                    <div id="chat-messages" class="chat-container overflow-y-auto p-4 space-y-4">
+                        <!-- Welcome message -->
+                        <div class="message-bubble">
+                            <div class="flex items-start space-x-3">
+                                <div class="flex-shrink-0">
+                                    <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-robot text-white text-sm"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="bg-blue-50 rounded-lg p-3">
+                                        <p class="text-gray-900">
+                                            Hello! I'm <span id="welcome-doctor-name">Dr. AI</span>. I'm here to help you with space booking and medical consultations. 
+                                            Let me guide you through the booking process step by step.
+                                        </p>
+                                    </div>
+                                    <p class="text-xs text-gray-500 mt-1">Just now</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Input -->
+                    <div class="border-t border-gray-200 p-4">
+                        <form id="chat-form" class="flex space-x-3">
+                            <div class="flex-1">
+                                <input 
+                                    type="text" 
+                                    id="chat-input" 
+                                    placeholder="Type your message or select an option above..."
+                                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    autocomplete="off"
+                                >
+                            </div>
+                            <button 
+                                type="submit" 
+                                id="send-btn"
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                            >
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="chatbot.js"></script>
+</body>
+</html> 

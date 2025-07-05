@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+        .success { background-color: #d4edda; border-color: #c3e6cb; }
+        .error { background-color: #f8d7da; border-color: #f5c6cb; }
+        button { padding: 10px 15px; margin: 5px; background: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        pre { background: #f8f9fa; padding: 10px; border-radius: 3px; overflow-x: auto; }
+        .booking-item { margin: 5px 0; padding: 5px; border-radius: 3px; }
+        .booking-clinical { background-color: #fef3c7; }
+        .booking-education { background-color: #dbeafe; }
+        .booking-admin { background-color: #dcfce7; }
+        .booking-research { background-color: #f3e8ff; }
+        .booking-public { background-color: #fce7f3; }
+        .booking-surgical { background-color: #fef2f2; }
+        .booking-diagnostic { background-color: #ecfdf5; }
+        .booking-support { background-color: #fffbeb; }
+    </style>
+</head>
+<body>
+    <h1>CareSpace Calendar Test</h1>
+    
+    <div class="test-section">
+        <h2>API Endpoints Test</h2>
+        <button onclick="testBookingsAPI()">Test Bookings API</button>
+        <button onclick="testSpacesAPI()">Test Spaces API</button>
+        <button onclick="testHealthAPI()">Test Health API</button>
+        <div id="api-results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Calendar Navigation Test</h2>
+        <button onclick="testCalendarNavigation()">Test Calendar Navigation</button>
+        <div id="calendar-test-results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Booking Display Test</h2>
+        <button onclick="testBookingDisplay()">Test Booking Display</button>
+        <div id="booking-display-results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Category Filter Test</h2>
+        <select id="category-filter-test" onchange="testCategoryFilter()">
+            <option value="">All Categories</option>
+            <option value="Clinical">Clinical</option>
+            <option value="Education">Education</option>
+            <option value="Admin">Admin</option>
+            <option value="Research">Research</option>
+            <option value="Public">Public</option>
+            <option value="Surgical">Surgical</option>
+            <option value="Diagnostic">Diagnostic</option>
+            <option value="Support">Support</option>
+        </select>
+        <div id="category-filter-results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Quick Links</h2>
+        <a href="/calendar.html" target="_blank"><button>Open Calendar Page</button></a>
+        <a href="/chatbot.html" target="_blank"><button>Open Chatbot</button></a>
+        <a href="/" target="_blank"><button>Open Dashboard</button></a>
+    </div>
+
+    <script>
+        const API_BASE = '/api';
+        
+        async function apiCall(endpoint) {
+            try {
+                const response = await fetch(`${API_BASE}${endpoint}`);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return await response.json();
+            } catch (error) {
+                throw error;
+            }
+        }
+        
+        function showResult(elementId, content, isSuccess = true) {
+            const element = document.getElementById(elementId);
+            element.innerHTML = `<div class="${isSuccess ? 'success' : 'error'}">${content}</div>`;
+        }
+        
+        async function testBookingsAPI() {
+            try {
+                const result = await apiCall('/bookings');
+                showResult('api-results', `
+                    <h3>Bookings API Test - Success!</h3>
+                    <p>Found ${result.count} bookings</p>
+                    <h4>Sample Bookings:</h4>
+                    <pre>${JSON.stringify(result.data.slice(0, 3), null, 2)}</pre>
+                `);
+            } catch (error) {
+                showResult('api-results', `Bookings API Test - Error: ${error.message}`, false);
+            }
+        }
+        
+        async function testSpacesAPI() {
+            try {
+                const result = await apiCall('/spaces');
+                showResult('api-results', `
+                    <h3>Spaces API Test - Success!</h3>
+                    <p>Found ${result.count} spaces</p>
+                    <h4>Sample Spaces:</h4>
+                    <pre>${JSON.stringify(result.data.slice(0, 3), null, 2)}</pre>
+                `);
+            } catch (error) {
+                showResult('api-results', `Spaces API Test - Error: ${error.message}`, false);
+            }
+        }
+        
+        async function testHealthAPI() {
+            try {
+                const result = await apiCall('/health');
+                showResult('api-results', `
+                    <h3>Health API Test - Success!</h3>
+                    <p>Server Status: ${result.status}</p>
+                    <p>Data Stats: ${result.dataStats.doctors} doctors, ${result.dataStats.spaces} spaces, ${result.dataStats.bookings} bookings</p>
+                    <pre>${JSON.stringify(result, null, 2)}</pre>
+                `);
+            } catch (error) {
+                showResult('api-results', `Health API Test - Error: ${error.message}`, false);
+            }
+        }
+        
+        async function testCalendarNavigation() {
+            const currentDate = new Date();
+            const nextMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1);
+            const prevMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);
+            
+            showResult('calendar-test-results', `
+                <h3>Calendar Navigation Test - Success!</h3>
+                <p>Current Date: ${currentDate.toLocaleDateString()}</p>
+                <p>Next Month: ${nextMonth.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</p>
+                <p>Previous Month: ${prevMonth.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</p>
+                <p>Today Button: ${currentDate.toLocaleDateString()}</p>
+            `);
+        }
+        
+        async function testBookingDisplay() {
+            try {
+                const [bookingsResult, spacesResult] = await Promise.all([
+                    apiCall('/bookings'),
+                    apiCall('/spaces')
+                ]);
+                
+                const bookings = bookingsResult.data;
+                const spaces = spacesResult.data;
+                
+                // Get bookings for a specific date
+                const testDate = '2025-07-10';
+                const dayBookings = bookings.filter(booking => booking.Date === testDate);
+                
+                let bookingHtml = `<h3>Booking Display Test - Success!</h3>`;
+                bookingHtml += `<p>Bookings for ${testDate}:</p>`;
+                
+                dayBookings.forEach(booking => {
+                    const space = spaces.find(s => s['Space ID'] === booking['Space ID']);
+                    if (space) {
+                        const categoryClass = `booking-${space.Category.toLowerCase()}`;
+                        bookingHtml += `
+                            <div class="booking-item ${categoryClass}">
+                                ${space.Name} (${booking['Start Timestamp'].slice(11, 16)}-${booking['End Timestamp'].slice(11, 16)})
+                                - ${space.Category}
+                            </div>
+                        `;
+                    }
+                });
+                
+                showResult('booking-display-results', bookingHtml);
+            } catch (error) {
+                showResult('booking-display-results', `Booking Display Test - Error: ${error.message}`, false);
+            }
+        }
+        
+        async function testCategoryFilter() {
+            const selectedCategory = document.getElementById('category-filter-test').value;
+            
+            if (!selectedCategory) {
+                showResult('category-filter-results', '<h3>Category Filter Test</h3><p>All categories selected</p>');
+                return;
+            }
+            
+            try {
+                const [bookingsResult, spacesResult] = await Promise.all([
+                    apiCall('/bookings'),
+                    apiCall('/spaces')
+                ]);
+                
+                const bookings = bookingsResult.data;
+                const spaces = spacesResult.data;
+                
+                // Filter bookings by category
+                const filteredBookings = bookings.filter(booking => {
+                    const space = spaces.find(s => s['Space ID'] === booking['Space ID']);
+                    return space && space.Category === selectedCategory;
+                });
+                
+                let filterHtml = `<h3>Category Filter Test - Success!</h3>`;
+                filterHtml += `<p>Filtered by: ${selectedCategory}</p>`;
+                filterHtml += `<p>Found ${filteredBookings.length} bookings in this category</p>`;
+                
+                if (filteredBookings.length > 0) {
+                    filterHtml += '<h4>Sample Filtered Bookings:</h4>';
+                    filteredBookings.slice(0, 5).forEach(booking => {
+                        const space = spaces.find(s => s['Space ID'] === booking['Space ID']);
+                        if (space) {
+                            filterHtml += `
+                                <div class="booking-item booking-${space.Category.toLowerCase()}">
+                                    ${space.Name} - ${booking.Date} (${booking['Start Timestamp'].slice(11, 16)}-${booking['End Timestamp'].slice(11, 16)})
+                                </div>
+                            `;
+                        }
+                    });
+                }
+                
+                showResult('category-filter-results', filterHtml);
+            } catch (error) {
+                showResult('category-filter-results', `Category Filter Test - Error: ${error.message}`, false);
+            }
+        }
+        
+        // Auto-run tests on page load
+        window.addEventListener('load', () => {
+            testHealthAPI();
+        });
+    </script>
+</body>
+</html> 

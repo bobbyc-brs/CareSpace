@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+        .success { background-color: #d4edda; border-color: #c3e6cb; }
+        .error { background-color: #f8d7da; border-color: #f5c6cb; }
+        button { padding: 10px 15px; margin: 5px; background: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        pre { background: #f8f9fa; padding: 10px; border-radius: 3px; overflow-x: auto; }
+        .space-details { margin: 10px 0; padding: 10px; background: #f8f9fa; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>Chatbot Functionality Test</h1>
+    
+    <div class="test-section">
+        <h2>1. Server Health Check</h2>
+        <button onclick="testHealth()">Test Health API</button>
+        <div id="health-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>2. Doctors API</h2>
+        <button onclick="testDoctors()">Test Doctors API</button>
+        <div id="doctors-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>3. Enhanced Chatbot Suggestions (with Time Details)</h2>
+        <button onclick="testEnhancedSuggestions()">Test Enhanced Suggestions API</button>
+        <div id="enhanced-suggestions-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>4. Chatbot Page</h2>
+        <a href="/chatbot.html" target="_blank">
+            <button>Open Chatbot Page</button>
+        </a>
+        <p>This will open the chatbot in a new tab for manual testing.</p>
+    </div>
+
+    <script>
+        async function testHealth() {
+            const resultDiv = document.getElementById('health-result');
+            try {
+                const response = await fetch('/api/health');
+                const data = await response.json();
+                resultDiv.innerHTML = `<div class="success">
+                    <h3>✅ Health Check Passed</h3>
+                    <pre>${JSON.stringify(data, null, 2)}</pre>
+                </div>`;
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="error">
+                    <h3>❌ Health Check Failed</h3>
+                    <p>${error.message}</p>
+                </div>`;
+            }
+        }
+        
+        async function testDoctors() {
+            const resultDiv = document.getElementById('doctors-result');
+            try {
+                const response = await fetch('/api/doctors');
+                const data = await response.json();
+                resultDiv.innerHTML = `<div class="success">
+                    <h3>✅ Doctors API Working</h3>
+                    <p>Found ${data.count} doctors</p>
+                    <pre>${JSON.stringify(data.data.slice(0, 2), null, 2)}</pre>
+                </div>`;
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="error">
+                    <h3>❌ Doctors API Failed</h3>
+                    <p>${error.message}</p>
+                </div>`;
+            }
+        }
+        
+        async function testEnhancedSuggestions() {
+            const resultDiv = document.getElementById('enhanced-suggestions-result');
+            try {
+                const response = await fetch('/api/chatbot/suggestions?specialty=general&date=2025-07-06&time=09:00&duration=2');
+                const data = await response.json();
+                
+                let resultHTML = `<div class="success">
+                    <h3>✅ Enhanced Suggestions API Working</h3>
+                    <p><strong>Message:</strong> ${data.data.message}</p>
+                    <p><strong>Request Details:</strong></p>
+                    <ul>
+                        <li>Date: ${data.data.requestDetails.date}</li>
+                        <li>Time: ${data.data.requestDetails.time}</li>
+                        <li>Duration: ${data.data.requestDetails.duration} hours</li>
+                        <li>Specialty: ${data.data.requestDetails.specialty}</li>
+                    </ul>
+                    <p><strong>Available Spaces:</strong> ${data.data.spaces.length}</p>
+                `;
+                
+                // Show detailed space information
+                if (data.data.spaces && data.data.spaces.length > 0) {
+                    resultHTML += '<h4>Sample Space Details:</h4>';
+                    data.data.spaces.slice(0, 3).forEach(space => {
+                        resultHTML += `
+                            <div class="space-details">
+                                <strong>${space.Name}</strong> (${space.Category})<br>
+                                📅 Date: ${space.availability.date}<br>
+                                ⏰ Time: ${space.availability.startTime} - ${space.availability.endTime}<br>
+                                ⏱️ Duration: ${space.availability.duration}<br>
+                                👥 Capacity: ${space['Capacity (people)']} people<br>
+                                📏 Area: ${space['Area (sqm)']} sqm<br>
+                                🔧 Equipment: ${space['Specialized Equipment']}
+                            </div>
+                        `;
+                    });
+                }
+                
+                resultHTML += '</div>';
+                resultDiv.innerHTML = resultHTML;
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="error">
+                    <h3>❌ Enhanced Suggestions API Failed</h3>
+                    <p>${error.message}</p>
+                </div>`;
+            }
+        }
+    </script>
+</body>
+</html> 
