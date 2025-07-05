@@ -299,6 +299,78 @@ GET /chatbot/suggestions?specialty=pediatric&date=2025-07-10&time=09:00
 }
 ```
 
+### GET /availability/check
+Check doctor and space availability for a specific date and time.
+
+**Query Parameters:**
+- `date` (required): Date in YYYY-MM-DD format
+- `time` (required): Time in HH:MM format
+- `duration` (optional): Duration in hours (default: 1)
+- `specialty` (optional): Filter doctors by specialty
+- `activity` (optional): Activity type to filter spaces by (e.g., "labwork", "consultation", "research", "teaching", "administration")
+
+**Activity Types Supported:**
+- **labwork/lab work**: Shows spaces suitable for laboratory work
+- **consultation/patient consultation**: Shows spaces suitable for patient consultations
+- **research**: Shows spaces suitable for research activities
+- **teaching/education**: Shows spaces suitable for teaching and education
+- **administration/admin**: Shows spaces suitable for administrative work
+- **private**: Shows private spaces
+
+**Example:**
+```
+GET /availability/check?date=2025-07-15&time=16:00&duration=2&specialty=emergency&activity=labwork
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "data": {
+    "requestedDateTime": "2025-07-15T20:00:00.000Z",
+    "requestedDuration": "2",
+    "requestedActivity": "labwork",
+    "doctorAvailability": [
+      {
+        "doctorId": "2",
+        "doctorName": "Dr. Bear SampleData",
+        "specialty": "Emergency Medicine Physician",
+        "available": true,
+        "reason": "Available during requested time",
+        "schedule": [...]
+      }
+    ],
+    "spaceAvailability": [
+      {
+        "spaceId": "1002",
+        "spaceName": "Meditation/Chapel",
+        "category": "Public",
+        "capacity": "15",
+        "area": "30",
+        "equipment": "None",
+        "available": true,
+        "reason": "Available during requested time",
+        "conflictingBookings": []
+      }
+    ],
+    "optimalMatches": [
+      {
+        "doctor": {...},
+        "space": {...},
+        "compatibility": "High"
+      }
+    ],
+    "summary": {
+      "totalDoctors": 10,
+      "totalSpaces": 20,
+      "availableDoctors": 1,
+      "availableSpaces": 20,
+      "optimalMatches": 20
+    }
+  }
+}
+```
+
 ## Statistics API
 
 ### GET /stats

@@ -166,7 +166,7 @@
                         const categoryClass = `booking-${space.Category.toLowerCase()}`;
                         bookingHtml += `
                             <div class="booking-item ${categoryClass}">
-                                ${space.Name} (${booking['Start Timestamp'].slice(11, 16)}-${booking['End Timestamp'].slice(11, 16)})
+                                ${space.SpaceName} (${booking['Start Timestamp'].slice(11, 16)}-${booking['End Timestamp'].slice(11, 16)})
                                 - ${space.Category}
                             </div>
                         `;
@@ -213,7 +213,7 @@
                         if (space) {
                             filterHtml += `
                                 <div class="booking-item booking-${space.Category.toLowerCase()}">
-                                    ${space.Name} - ${booking.Date} (${booking['Start Timestamp'].slice(11, 16)}-${booking['End Timestamp'].slice(11, 16)})
+                                    ${space.SpaceName} - ${booking.Date} (${booking['Start Timestamp'].slice(11, 16)}-${booking['End Timestamp'].slice(11, 16)})
                                 </div>
                             `;
                         }

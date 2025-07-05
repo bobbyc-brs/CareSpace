@@ -1,0 +1,688 @@
+DoctorID,Date,Day,Time,Activity,Location,Notes
+6,2025-07-05,Saturday,08:00-09:00,Administrative Tasks,Office 1103,Weekend coverage
+6,2025-07-05,Saturday,09:00-12:00,On-call Coverage,Hospital,Emergency consultations
+6,2025-07-05,Saturday,12:00-13:00,Lunch Break,,
+6,2025-07-05,Saturday,13:00-17:00,On-call Coverage,Hospital,Emergency consultations
+6,2025-07-06,Sunday,08:00-09:00,Administrative Tasks,Home Office,Chart review
+6,2025-07-06,Sunday,09:00-12:00,On-call Coverage,Hospital,Emergency consultations
+6,2025-07-06,Sunday,12:00-13:00,Lunch Break,,
+6,2025-07-06,Sunday,13:00-17:00,On-call Coverage,Hospital,Emergency consultations
+6,2025-07-07,Monday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+6,2025-07-07,Monday,09:00-12:00,Outpatient Clinic,Office 1103,Scheduled appointments
+6,2025-07-07,Monday,12:00-13:00,Lunch Break,,
+6,2025-07-07,Monday,13:00-15:00,Cardiac Catheterization,Cath Lab,Procedures
+6,2025-07-07,Monday,15:00-16:00,Documentation,Office 1103,Patient notes
+6,2025-07-07,Monday,16:00-17:00,Multidisciplinary Team Meeting,Conference Room,Case discussions
+6,2025-07-08,Tuesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+6,2025-07-08,Tuesday,09:00-12:00,Outpatient Clinic,Office 1103,Scheduled appointments
+6,2025-07-08,Tuesday,12:00-13:00,Lunch Break,,
+6,2025-07-08,Tuesday,13:00-15:00,Echocardiography,Echo Lab,Diagnostic procedures
+6,2025-07-08,Tuesday,15:00-16:00,Documentation,Office 1103,Patient notes
+6,2025-07-08,Tuesday,16:00-17:00,Consultation Calls,Office 1103,Referring physicians
+6,2025-07-09,Wednesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+6,2025-07-09,Wednesday,09:00-12:00,Outpatient Clinic,Office 1103,Scheduled appointments
+6,2025-07-09,Wednesday,12:00-13:00,Lunch Break,,
+6,2025-07-09,Wednesday,13:00-15:00,Cardiac Surgery Consultation,OR,Pre/post-operative care
+6,2025-07-09,Wednesday,15:00-16:00,Documentation,Office 1103,Patient notes
+6,2025-07-09,Wednesday,16:00-17:00,Research Activities,Office 1103,Clinical studies
+6,2025-07-10,Thursday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+6,2025-07-10,Thursday,09:00-12:00,Outpatient Clinic,Office 1103,Scheduled appointments
+6,2025-07-10,Thursday,12:00-13:00,Lunch Break,,
+6,2025-07-10,Thursday,13:00-15:00,Cardiac Catheterization,Cath Lab,Procedures
+6,2025-07-10,Thursday,15:00-16:00,Documentation,Office 1103,Patient notes
+6,2025-07-10,Thursday,16:00-17:00,Continuing Education,Office 1103,Medical journals
+6,2025-07-11,Friday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+6,2025-07-11,Friday,09:00-12:00,Outpatient Clinic,Office 1103,Scheduled appointments
+6,2025-07-11,Friday,12:00-13:00,Lunch Break,,
+6,2025-07-11,Friday,13:00-15:00,Echocardiography,Echo Lab,Diagnostic procedures
+6,2025-07-11,Friday,15:00-16:00,Documentation,Office 1103,Patient notes
+6,2025-07-11,Friday,16:00-17:00,Weekly Planning,Office 1103,Next week preparation
+6,2025-07-12,Saturday,08:00-09:00,Administrative Tasks,Home Office,Chart review
+6,2025-07-12,Saturday,09:00-12:00,On-call Coverage,Hospital,Emergency consultations
+6,2025-07-12,Saturday,12:00-13:00,Lunch Break,,
+6,2025-07-12,Saturday,13:00-17:00,On-call Coverage,Hospital,Emergency consultations
+6,2025-07-13,Sunday,08:00-09:00,Administrative Tasks,Home Office,Chart review
+6,2025-07-13,Sunday,09:00-12:00,On-call Coverage,Hospital,Emergency consultations
+6,2025-07-13,Sunday,12:00-13:00,Lunch Break,,
+6,2025-07-13,Sunday,13:00-17:00,On-call Coverage,Hospital,Emergency consultations
+6,2025-07-14,Monday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+6,2025-07-14,Monday,09:00-12:00,Outpatient Clinic,Office 1103,Scheduled appointments
+6,2025-07-14,Monday,12:00-13:00,Lunch Break,,
+6,2025-07-14,Monday,13:00-15:00,Cardiac Catheterization,Cath Lab,Procedures
+6,2025-07-14,Monday,15:00-16:00,Documentation,Office 1103,Patient notes
+6,2025-07-14,Monday,16:00-17:00,Multidisciplinary Team Meeting,Conference Room,Case discussions
+6,2025-07-15,Tuesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+6,2025-07-15,Tuesday,09:00-12:00,Outpatient Clinic,Office 1103,Scheduled appointments
+6,2025-07-15,Tuesday,12:00-13:00,Lunch Break,,
+6,2025-07-15,Tuesday,13:00-15:00,Echocardiography,Echo Lab,Diagnostic procedures
+6,2025-07-15,Tuesday,15:00-16:00,Documentation,Office 1103,Patient notes
+6,2025-07-15,Tuesday,16:00-17:00,Consultation Calls,Office 1103,Referring physicians
+6,2025-07-16,Wednesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+6,2025-07-16,Wednesday,09:00-12:00,Outpatient Clinic,Office 1103,Scheduled appointments
+6,2025-07-16,Wednesday,12:00-13:00,Lunch Break,,
+6,2025-07-16,Wednesday,13:00-15:00,Cardiac Surgery Consultation,OR,Pre/post-operative care
+6,2025-07-16,Wednesday,15:00-16:00,Documentation,Office 1103,Patient notes
+6,2025-07-16,Wednesday,16:00-17:00,Research Activities,Office 1103,Clinical studies
+6,2025-07-17,Thursday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+6,2025-07-17,Thursday,09:00-12:00,Outpatient Clinic,Office 1103,Scheduled appointments
+6,2025-07-17,Thursday,12:00-13:00,Lunch Break,,
+6,2025-07-17,Thursday,13:00-15:00,Cardiac Catheterization,Cath Lab,Procedures
+6,2025-07-17,Thursday,15:00-16:00,Documentation,Office 1103,Patient notes
+6,2025-07-17,Thursday,16:00-17:00,Continuing Education,Office 1103,Medical journals
+6,2025-07-18,Friday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+6,2025-07-18,Friday,09:00-12:00,Outpatient Clinic,Office 1103,Scheduled appointments
+6,2025-07-18,Friday,12:00-13:00,Lunch Break,,
+6,2025-07-18,Friday,13:00-15:00,Echocardiography,Echo Lab,Diagnostic procedures
+6,2025-07-18,Friday,15:00-16:00,Documentation,Office 1103,Patient notes
+6,2025-07-18,Friday,16:00-17:00,Weekly Planning,Office 1103,Next week preparation
+1,2025-07-05,Saturday,08:00-12:00,Weekend On-Call Coverage,Hospital - OR Suite,Emergency pediatric cases
+1,2025-07-05,Saturday,12:00-13:00,Lunch Break,Office 1100,
+1,2025-07-05,Saturday,13:00-17:00,Weekend On-Call Coverage,Hospital - OR Suite,Emergency pediatric cases
+1,2025-07-06,Sunday,OFF,Weekend Off,Home,
+1,2025-07-07,Monday,07:00-08:00,Morning Rounds,Pediatric ICU,Pre-operative consultations
+1,2025-07-07,Monday,08:00-12:00,Scheduled Surgeries,OR Suite 3,Pediatric cases
+1,2025-07-07,Monday,12:00-13:00,Lunch Break,Office 1100,
+1,2025-07-07,Monday,13:00-17:00,Scheduled Surgeries,OR Suite 5,Pediatric cases
+1,2025-07-07,Monday,17:00-18:00,Documentation,Office 1100,Patient charts and reports
+1,2025-07-08,Tuesday,07:00-08:00,Morning Rounds,Pediatric ICU,Pre-operative consultations
+1,2025-07-08,Tuesday,08:00-12:00,Scheduled Surgeries,OR Suite 2,Pediatric cases
+1,2025-07-08,Tuesday,12:00-13:00,Lunch Break,Office 1100,
+1,2025-07-08,Tuesday,13:00-16:00,Scheduled Surgeries,OR Suite 4,Pediatric cases
+1,2025-07-08,Tuesday,16:00-17:00,Consultation,Office 1100,New patient evaluation
+1,2025-07-08,Tuesday,17:00-18:00,Documentation,Office 1100,Patient charts and reports
+1,2025-07-09,Wednesday,07:00-08:00,Morning Rounds,Pediatric ICU,Pre-operative consultations
+1,2025-07-09,Wednesday,08:00-12:00,Scheduled Surgeries,OR Suite 1,Pediatric cases
+1,2025-07-09,Wednesday,12:00-13:00,Lunch Break,Office 1100,
+1,2025-07-09,Wednesday,13:00-15:00,Scheduled Surgeries,OR Suite 3,Pediatric cases
+1,2025-07-09,Wednesday,15:00-16:00,Department Meeting,Conference Room A,Anesthesiology department
+1,2025-07-09,Wednesday,16:00-17:00,Consultation,Office 1100,Pre-operative assessment
+1,2025-07-09,Wednesday,17:00-18:00,Documentation,Office 1100,Patient charts and reports
+1,2025-07-10,Thursday,07:00-08:00,Morning Rounds,Pediatric ICU,Pre-operative consultations
+1,2025-07-10,Thursday,08:00-12:00,Scheduled Surgeries,OR Suite 2,Pediatric cases
+1,2025-07-10,Thursday,12:00-13:00,Lunch Break,Office 1100,
+1,2025-07-10,Thursday,13:00-17:00,Scheduled Surgeries,OR Suite 6,Pediatric cases
+1,2025-07-10,Thursday,17:00-18:00,Documentation,Office 1100,Patient charts and reports
+1,2025-07-11,Friday,07:00-08:00,Morning Rounds,Pediatric ICU,Pre-operative consultations
+1,2025-07-11,Friday,08:00-12:00,Scheduled Surgeries,OR Suite 4,Pediatric cases
+1,2025-07-11,Friday,12:00-13:00,Lunch Break,Office 1100,
+1,2025-07-11,Friday,13:00-16:00,Scheduled Surgeries,OR Suite 1,Pediatric cases
+1,2025-07-11,Friday,16:00-17:00,Case Review,Office 1100,Weekly case discussions
+1,2025-07-11,Friday,17:00-18:00,Documentation,Office 1100,Patient charts and reports
+1,2025-07-12,Saturday,OFF,Weekend Off,Home,
+1,2025-07-13,Sunday,OFF,Weekend Off,Home,
+1,2025-07-14,Monday,07:00-08:00,Morning Rounds,Pediatric ICU,Pre-operative consultations
+1,2025-07-14,Monday,08:00-12:00,Scheduled Surgeries,OR Suite 5,Pediatric cases
+1,2025-07-14,Monday,12:00-13:00,Lunch Break,Office 1100,
+1,2025-07-14,Monday,13:00-17:00,Scheduled Surgeries,OR Suite 3,Pediatric cases
+1,2025-07-14,Monday,17:00-18:00,Documentation,Office 1100,Patient charts and reports
+1,2025-07-15,Tuesday,07:00-08:00,Morning Rounds,Pediatric ICU,Pre-operative consultations
+1,2025-07-15,Tuesday,08:00-12:00,Scheduled Surgeries,OR Suite 2,Pediatric cases
+1,2025-07-15,Tuesday,12:00-13:00,Lunch Break,Office 1100,
+1,2025-07-15,Tuesday,13:00-15:00,Scheduled Surgeries,OR Suite 6,Pediatric cases
+1,2025-07-15,Tuesday,15:00-16:00,Consultation,Office 1100,Complex case evaluation
+1,2025-07-15,Tuesday,16:00-17:00,Research Time,Office 1100,Clinical research activities
+1,2025-07-15,Tuesday,17:00-18:00,Documentation,Office 1100,Patient charts and reports
+1,2025-07-16,Wednesday,07:00-08:00,Morning Rounds,Pediatric ICU,Pre-operative consultations
+1,2025-07-16,Wednesday,08:00-12:00,Scheduled Surgeries,OR Suite 4,Pediatric cases
+1,2025-07-16,Wednesday,12:00-13:00,Lunch Break,Office 1100,
+1,2025-07-16,Wednesday,13:00-15:00,Scheduled Surgeries,OR Suite 1,Pediatric cases
+1,2025-07-16,Wednesday,15:00-16:00,Department Meeting,Conference Room A,Anesthesiology department
+1,2025-07-16,Wednesday,16:00-17:00,Consultation,Office 1100,Pre-operative assessment
+1,2025-07-16,Wednesday,17:00-18:00,Documentation,Office 1100,Patient charts and reports
+1,2025-07-17,Thursday,07:00-08:00,Morning Rounds,Pediatric ICU,Pre-operative consultations
+1,2025-07-17,Thursday,08:00-12:00,Scheduled Surgeries,OR Suite 3,Pediatric cases
+1,2025-07-17,Thursday,12:00-13:00,Lunch Break,Office 1100,
+1,2025-07-17,Thursday,13:00-17:00,Scheduled Surgeries,OR Suite 5,Pediatric cases
+1,2025-07-17,Thursday,17:00-18:00,Documentation,Office 1100,Patient charts and reports
+1,2025-07-18,Friday,07:00-08:00,Morning Rounds,Pediatric ICU,Pre-operative consultations
+1,2025-07-18,Friday,08:00-12:00,Scheduled Surgeries,OR Suite 2,Pediatric cases
+1,2025-07-18,Friday,12:00-13:00,Lunch Break,Office 1100,
+1,2025-07-18,Friday,13:00-16:00,Scheduled Surgeries,OR Suite 4,Pediatric cases
+1,2025-07-18,Friday,16:00-17:00,Case Review,Office 1100,Weekly case discussions
+1,2025-07-18,Friday,17:00-18:00,Documentation,Office 1100,Patient charts and reports
+2,2025-07-05,Saturday,07:00-19:00,Emergency Department Shift,Emergency Department,12-hour day shift
+2,2025-07-06,Sunday,OFF,Day Off,Home,
+2,2025-07-07,Monday,19:00-07:00,Emergency Department Shift,Emergency Department,12-hour night shift
+2,2025-07-08,Tuesday,OFF,Post-Night Recovery,Home,Recovery day after night shift
+2,2025-07-09,Wednesday,07:00-19:00,Emergency Department Shift,Emergency Department,12-hour day shift
+2,2025-07-10,Thursday,07:00-19:00,Emergency Department Shift,Emergency Department,12-hour day shift
+2,2025-07-11,Friday,OFF,Day Off,Home,
+2,2025-07-12,Saturday,19:00-07:00,Emergency Department Shift,Emergency Department,12-hour night shift
+2,2025-07-13,Sunday,OFF,Post-Night Recovery,Home,Recovery day after night shift
+2,2025-07-14,Monday,07:00-19:00,Emergency Department Shift,Emergency Department,12-hour day shift
+2,2025-07-15,Tuesday,19:00-07:00,Emergency Department Shift,Emergency Department,12-hour night shift
+2,2025-07-16,Wednesday,OFF,Post-Night Recovery,Home,Recovery day after night shift
+2,2025-07-17,Thursday,07:00-19:00,Emergency Department Shift,Emergency Department,12-hour day shift
+2,2025-07-18,Friday,07:00-19:00,Emergency Department Shift,Emergency Department,12-hour day shift
+3,2025-07-05,Saturday,08:00-12:00,Weekend NICU Coverage,NICU,Emergency pharmaceutical consultations
+3,2025-07-05,Saturday,12:00-13:00,Lunch Break,Office 1101,
+3,2025-07-05,Saturday,13:00-16:00,Weekend NICU Coverage,NICU,Emergency pharmaceutical consultations
+3,2025-07-06,Sunday,OFF,Weekend Off,Home,
+3,2025-07-07,Monday,08:00-09:00,NICU Rounds,NICU,Medication review with medical team
+3,2025-07-07,Monday,09:00-12:00,Pharmaceutical Consultations,NICU,Patient medication optimization
+3,2025-07-07,Monday,12:00-13:00,Lunch Break,Office 1101,
+3,2025-07-07,Monday,13:00-15:00,Medication Preparation Review,Pharmacy,IV and specialized formulations
+3,2025-07-07,Monday,15:00-16:00,Documentation,Office 1101,Patient medication records
+3,2025-07-07,Monday,16:00-17:00,Family Education,NICU,Medication counseling for parents
+3,2025-07-08,Tuesday,08:00-09:00,NICU Rounds,NICU,Medication review with medical team
+3,2025-07-08,Tuesday,09:00-12:00,Pharmaceutical Consultations,NICU,Patient medication optimization
+3,2025-07-08,Tuesday,12:00-13:00,Lunch Break,Office 1101,
+3,2025-07-08,Tuesday,13:00-15:00,Research Time,Office 1101,Neonatal pharmacology research
+3,2025-07-08,Tuesday,15:00-16:00,Drug Information,Office 1101,Literature review and queries
+3,2025-07-08,Tuesday,16:00-17:00,Documentation,Office 1101,Patient medication records
+3,2025-07-09,Wednesday,08:00-09:00,NICU Rounds,NICU,Medication review with medical team
+3,2025-07-09,Wednesday,09:00-12:00,Pharmaceutical Consultations,NICU,Patient medication optimization
+3,2025-07-09,Wednesday,12:00-13:00,Lunch Break,Office 1101,
+3,2025-07-09,Wednesday,13:00-14:00,Pharmacy Meeting,Pharmacy Conference Room,Department meeting
+3,2025-07-09,Wednesday,14:00-15:00,Medication Preparation Review,Pharmacy,IV and specialized formulations
+3,2025-07-09,Wednesday,15:00-16:00,Quality Assurance,Office 1101,Medication error prevention
+3,2025-07-09,Wednesday,16:00-17:00,Documentation,Office 1101,Patient medication records
+3,2025-07-10,Thursday,08:00-09:00,NICU Rounds,NICU,Medication review with medical team
+3,2025-07-10,Thursday,09:00-12:00,Pharmaceutical Consultations,NICU,Patient medication optimization
+3,2025-07-10,Thursday,12:00-13:00,Lunch Break,Office 1101,
+3,2025-07-10,Thursday,13:00-15:00,Education Session,NICU Conference Room,Staff education on new medications
+3,2025-07-10,Thursday,15:00-16:00,Drug Information,Office 1101,Literature review and queries
+3,2025-07-10,Thursday,16:00-17:00,Documentation,Office 1101,Patient medication records
+3,2025-07-11,Friday,08:00-09:00,NICU Rounds,NICU,Medication review with medical team
+3,2025-07-11,Friday,09:00-12:00,Pharmaceutical Consultations,NICU,Patient medication optimization
+3,2025-07-11,Friday,12:00-13:00,Lunch Break,Office 1101,
+3,2025-07-11,Friday,13:00-15:00,Case Review,Office 1101,Weekly complex case discussions
+3,2025-07-11,Friday,15:00-16:00,Family Education,NICU,Medication counseling for parents
+3,2025-07-11,Friday,16:00-17:00,Documentation,Office 1101,Patient medication records
+3,2025-07-12,Saturday,OFF,Weekend Off,Home,
+3,2025-07-13,Sunday,OFF,Weekend Off,Home,
+3,2025-07-14,Monday,08:00-09:00,NICU Rounds,NICU,Medication review with medical team
+3,2025-07-14,Monday,09:00-12:00,Pharmaceutical Consultations,NICU,Patient medication optimization
+3,2025-07-14,Monday,12:00-13:00,Lunch Break,Office 1101,
+3,2025-07-14,Monday,13:00-15:00,Medication Preparation Review,Pharmacy,IV and specialized formulations
+3,2025-07-14,Monday,15:00-16:00,Documentation,Office 1101,Patient medication records
+3,2025-07-14,Monday,16:00-17:00,Family Education,NICU,Medication counseling for parents
+3,2025-07-15,Tuesday,08:00-09:00,NICU Rounds,NICU,Medication review with medical team
+3,2025-07-15,Tuesday,09:00-12:00,Pharmaceutical Consultations,NICU,Patient medication optimization
+3,2025-07-15,Tuesday,12:00-13:00,Lunch Break,Office 1101,
+3,2025-07-15,Tuesday,13:00-15:00,Research Time,Office 1101,Neonatal pharmacology research
+3,2025-07-15,Tuesday,15:00-16:00,Drug Information,Office 1101,Literature review and queries
+3,2025-07-15,Tuesday,16:00-17:00,Documentation,Office 1101,Patient medication records
+3,2025-07-16,Wednesday,08:00-09:00,NICU Rounds,NICU,Medication review with medical team
+3,2025-07-16,Wednesday,09:00-12:00,Pharmaceutical Consultations,NICU,Patient medication optimization
+3,2025-07-16,Wednesday,12:00-13:00,Lunch Break,Office 1101,
+3,2025-07-16,Wednesday,13:00-14:00,Pharmacy Meeting,Pharmacy Conference Room,Department meeting
+3,2025-07-16,Wednesday,14:00-15:00,Medication Preparation Review,Pharmacy,IV and specialized formulations
+3,2025-07-16,Wednesday,15:00-16:00,Quality Assurance,Office 1101,Medication error prevention
+3,2025-07-16,Wednesday,16:00-17:00,Documentation,Office 1101,Patient medication records
+3,2025-07-17,Thursday,08:00-09:00,NICU Rounds,NICU,Medication review with medical team
+3,2025-07-17,Thursday,09:00-12:00,Pharmaceutical Consultations,NICU,Patient medication optimization
+3,2025-07-17,Thursday,12:00-13:00,Lunch Break,Office 1101,
+3,2025-07-17,Thursday,13:00-15:00,Education Session,NICU Conference Room,Staff education on new medications
+3,2025-07-17,Thursday,15:00-16:00,Drug Information,Office 1101,Literature review and queries
+3,2025-07-17,Thursday,16:00-17:00,Documentation,Office 1101,Patient medication records
+3,2025-07-18,Friday,08:00-09:00,NICU Rounds,NICU,Medication review with medical team
+3,2025-07-18,Friday,09:00-12:00,Pharmaceutical Consultations,NICU,Patient medication optimization
+3,2025-07-18,Friday,12:00-13:00,Lunch Break,Office 1101,
+3,2025-07-18,Friday,13:00-15:00,Case Review,Office 1101,Weekly complex case discussions
+3,2025-07-18,Friday,15:00-16:00,Family Education,NICU,Medication counseling for parents
+3,2025-07-18,Friday,16:00-17:00,Documentation,Office 1101,Patient medication records
+4,2025-07-05,Saturday,08:00-12:00,Weekend On-Call,Hospital - Labor & Delivery,High-risk pregnancy emergencies
+4,2025-07-05,Saturday,12:00-13:00,Lunch Break,Office 1102,
+4,2025-07-05,Saturday,13:00-16:00,Telemedicine Consultations,Home Office,Remote patient consultations
+4,2025-07-06,Sunday,OFF,Weekend Off,Home,
+4,2025-07-07,Monday,08:00-09:00,High-Risk Clinic Rounds,Maternal-Fetal Medicine Unit,Patient status review
+4,2025-07-07,Monday,09:00-12:00,Ultrasound Clinic,Ultrasound Suite,Detailed fetal assessments
+4,2025-07-07,Monday,12:00-13:00,Lunch Break,Office 1102,
+4,2025-07-07,Monday,13:00-15:00,High-Risk Prenatal Consultations,Office 1102,New patient evaluations
+4,2025-07-07,Monday,15:00-16:00,Genetic Counseling Review,Office 1102,Case preparation with genetics team
+4,2025-07-07,Monday,16:00-17:00,Documentation,Office 1102,Patient charts and reports
+4,2025-07-08,Tuesday,08:00-09:00,Labor & Delivery Rounds,Labor & Delivery,High-risk deliveries oversight
+4,2025-07-08,Tuesday,09:00-12:00,Ultrasound Clinic,Ultrasound Suite,Detailed fetal assessments
+4,2025-07-08,Tuesday,12:00-13:00,Lunch Break,Office 1102,
+4,2025-07-08,Tuesday,13:00-15:00,High-Risk Prenatal Consultations,Office 1102,Follow-up appointments
+4,2025-07-08,Tuesday,15:00-17:00,Research Time,Home Office,Clinical research activities
+4,2025-07-09,Wednesday,08:00-09:00,High-Risk Clinic Rounds,Maternal-Fetal Medicine Unit,Patient status review
+4,2025-07-09,Wednesday,09:00-12:00,Surgical Procedures,Operating Room,Fetal interventions
+4,2025-07-09,Wednesday,12:00-13:00,Lunch Break,Office 1102,
+4,2025-07-09,Wednesday,13:00-14:00,Department Meeting,Conference Room B,MFM department meeting
+4,2025-07-09,Wednesday,14:00-16:00,High-Risk Prenatal Consultations,Office 1102,Complex case consultations
+4,2025-07-09,Wednesday,16:00-17:00,Documentation,Office 1102,Patient charts and reports
+4,2025-07-10,Thursday,08:00-09:00,Labor & Delivery Rounds,Labor & Delivery,High-risk deliveries oversight
+4,2025-07-10,Thursday,09:00-12:00,Ultrasound Clinic,Ultrasound Suite,Detailed fetal assessments
+4,2025-07-10,Thursday,12:00-13:00,Lunch Break,Office 1102,
+4,2025-07-10,Thursday,13:00-15:00,High-Risk Prenatal Consultations,Office 1102,Patient follow-ups
+4,2025-07-10,Thursday,15:00-17:00,Telemedicine Consultations,Home Office,Remote patient consultations
+4,2025-07-11,Friday,08:00-09:00,High-Risk Clinic Rounds,Maternal-Fetal Medicine Unit,Patient status review
+4,2025-07-11,Friday,09:00-12:00,Ultrasound Clinic,Ultrasound Suite,Detailed fetal assessments
+4,2025-07-11,Friday,12:00-13:00,Lunch Break,Office 1102,
+4,2025-07-11,Friday,13:00-15:00,Case Review,Office 1102,Weekly complex case discussions
+4,2025-07-11,Friday,15:00-16:00,Patient Education,Office 1102,High-risk pregnancy counseling
+4,2025-07-11,Friday,16:00-17:00,Documentation,Office 1102,Patient charts and reports
+4,2025-07-12,Saturday,OFF,Weekend Off,Home,
+4,2025-07-13,Sunday,08:00-12:00,Weekend On-Call,Hospital - Labor & Delivery,High-risk pregnancy emergencies
+4,2025-07-13,Sunday,12:00-13:00,Lunch Break,Office 1102,
+4,2025-07-13,Sunday,13:00-16:00,Research Time,Home Office,Clinical research activities
+4,2025-07-14,Monday,08:00-09:00,High-Risk Clinic Rounds,Maternal-Fetal Medicine Unit,Patient status review
+4,2025-07-14,Monday,09:00-12:00,Ultrasound Clinic,Ultrasound Suite,Detailed fetal assessments
+4,2025-07-14,Monday,12:00-13:00,Lunch Break,Office 1102,
+4,2025-07-14,Monday,13:00-15:00,High-Risk Prenatal Consultations,Office 1102,New patient evaluations
+4,2025-07-14,Monday,15:00-16:00,Genetic Counseling Review,Office 1102,Case preparation with genetics team
+4,2025-07-14,Monday,16:00-17:00,Documentation,Office 1102,Patient charts and reports
+4,2025-07-15,Tuesday,08:00-09:00,Labor & Delivery Rounds,Labor & Delivery,High-risk deliveries oversight
+4,2025-07-15,Tuesday,09:00-12:00,Ultrasound Clinic,Ultrasound Suite,Detailed fetal assessments
+4,2025-07-15,Tuesday,12:00-13:00,Lunch Break,Office 1102,
+4,2025-07-15,Tuesday,13:00-15:00,High-Risk Prenatal Consultations,Office 1102,Follow-up appointments
+4,2025-07-15,Tuesday,15:00-17:00,Research Time,Home Office,Clinical research activities
+4,2025-07-16,Wednesday,08:00-09:00,High-Risk Clinic Rounds,Maternal-Fetal Medicine Unit,Patient status review
+4,2025-07-16,Wednesday,09:00-12:00,Surgical Procedures,Operating Room,Fetal interventions
+4,2025-07-16,Wednesday,12:00-13:00,Lunch Break,Office 1102,
+4,2025-07-16,Wednesday,13:00-14:00,Department Meeting,Conference Room B,MFM department meeting
+4,2025-07-16,Wednesday,14:00-16:00,High-Risk Prenatal Consultations,Office 1102,Complex case consultations
+4,2025-07-16,Wednesday,16:00-17:00,Documentation,Office 1102,Patient charts and reports
+4,2025-07-17,Thursday,08:00-09:00,Labor & Delivery Rounds,Labor & Delivery,High-risk deliveries oversight
+4,2025-07-17,Thursday,09:00-12:00,Ultrasound Clinic,Ultrasound Suite,Detailed fetal assessments
+4,2025-07-17,Thursday,12:00-13:00,Lunch Break,Office 1102,
+4,2025-07-17,Thursday,13:00-15:00,High-Risk Prenatal Consultations,Office 1102,Patient follow-ups
+4,2025-07-17,Thursday,15:00-17:00,Telemedicine Consultations,Home Office,Remote patient consultations
+4,2025-07-18,Friday,08:00-09:00,High-Risk Clinic Rounds,Maternal-Fetal Medicine Unit,Patient status review
+4,2025-07-18,Friday,09:00-12:00,Ultrasound Clinic,Ultrasound Suite,Detailed fetal assessments
+4,2025-07-18,Friday,12:00-13:00,Lunch Break,Office 1102,
+4,2025-07-18,Friday,13:00-15:00,Case Review,Office 1102,Weekly complex case discussions
+4,2025-07-18,Friday,15:00-16:00,Patient Education,Office 1102,High-risk pregnancy counseling
+4,2025-07-18,Friday,16:00-17:00,Documentation,Office 1102,Patient charts and reports
+5,2025-07-05,Saturday,07:00-19:00,Weekend Cardiac Unit Coverage,Cardiac Care Unit,12-hour shift - acute cardiac patients
+5,2025-07-06,Sunday,OFF,Weekend Off,Home,
+5,2025-07-07,Monday,07:00-08:00,Cardiac Unit Rounds,Cardiac Care Unit,Patient assessments with cardiology team
+5,2025-07-07,Monday,08:00-12:00,Patient Care,Cardiac Care Unit,Direct patient care and monitoring
+5,2025-07-07,Monday,12:00-13:00,Lunch Break,Staff Break Room,
+5,2025-07-07,Monday,13:00-16:00,Cardiac Procedures,Cardiac Catheterization Lab,Assisting with procedures
+5,2025-07-07,Monday,16:00-17:00,Patient Education,Cardiac Care Unit,Discharge planning and education
+5,2025-07-07,Monday,17:00-19:00,Documentation,Nursing Station,Patient charts and care plans
+5,2025-07-08,Tuesday,07:00-08:00,Cardiac Unit Rounds,Cardiac Care Unit,Patient assessments with cardiology team
+5,2025-07-08,Tuesday,08:00-12:00,Patient Care,Cardiac Care Unit,Direct patient care and monitoring
+5,2025-07-08,Tuesday,12:00-13:00,Lunch Break,Staff Break Room,
+5,2025-07-08,Tuesday,13:00-16:00,Outpatient Cardiac Clinic,Cardiac Clinic,Follow-up appointments
+5,2025-07-08,Tuesday,16:00-17:00,Care Coordination,Nursing Station,Coordinating patient care plans
+5,2025-07-08,Tuesday,17:00-19:00,Documentation,Nursing Station,Patient charts and care plans
+5,2025-07-09,Wednesday,07:00-08:00,Cardiac Unit Rounds,Cardiac Care Unit,Patient assessments with cardiology team
+5,2025-07-09,Wednesday,08:00-12:00,Patient Care,Cardiac Care Unit,Direct patient care and monitoring
+5,2025-07-09,Wednesday,12:00-13:00,Lunch Break,Staff Break Room,
+5,2025-07-09,Wednesday,13:00-15:00,Cardiac Procedures,Cardiac Catheterization Lab,Assisting with procedures
+5,2025-07-09,Wednesday,15:00-16:00,Staff Meeting,Cardiac Unit Conference Room,Nursing staff meeting
+5,2025-07-09,Wednesday,16:00-17:00,Patient Education,Cardiac Care Unit,Heart health education
+5,2025-07-09,Wednesday,17:00-19:00,Documentation,Nursing Station,Patient charts and care plans
+5,2025-07-10,Thursday,07:00-08:00,Cardiac Unit Rounds,Cardiac Care Unit,Patient assessments with cardiology team
+5,2025-07-10,Thursday,08:00-12:00,Patient Care,Cardiac Care Unit,Direct patient care and monitoring
+5,2025-07-10,Thursday,12:00-13:00,Lunch Break,Staff Break Room,
+5,2025-07-10,Thursday,13:00-16:00,Outpatient Cardiac Clinic,Cardiac Clinic,Follow-up appointments
+5,2025-07-10,Thursday,16:00-17:00,Quality Improvement,Nursing Station,Cardiac care quality metrics
+5,2025-07-10,Thursday,17:00-19:00,Documentation,Nursing Station,Patient charts and care plans
+5,2025-07-11,Friday,07:00-08:00,Cardiac Unit Rounds,Cardiac Care Unit,Patient assessments with cardiology team
+5,2025-07-11,Friday,08:00-12:00,Patient Care,Cardiac Care Unit,Direct patient care and monitoring
+5,2025-07-11,Friday,12:00-13:00,Lunch Break,Staff Break Room,
+5,2025-07-11,Friday,13:00-16:00,Cardiac Procedures,Cardiac Catheterization Lab,Assisting with procedures
+5,2025-07-11,Friday,16:00-17:00,Case Review,Cardiac Unit Conference Room,Weekly patient case discussions
+5,2025-07-11,Friday,17:00-19:00,Documentation,Nursing Station,Patient charts and care plans
+5,2025-07-12,Saturday,OFF,Weekend Off,Home,
+5,2025-07-13,Sunday,07:00-19:00,Weekend Cardiac Unit Coverage,Cardiac Care Unit,12-hour shift - acute cardiac patients
+5,2025-07-14,Monday,07:00-08:00,Cardiac Unit Rounds,Cardiac Care Unit,Patient assessments with cardiology team
+5,2025-07-14,Monday,08:00-12:00,Patient Care,Cardiac Care Unit,Direct patient care and monitoring
+5,2025-07-14,Monday,12:00-13:00,Lunch Break,Staff Break Room,
+5,2025-07-14,Monday,13:00-16:00,Cardiac Procedures,Cardiac Catheterization Lab,Assisting with procedures
+5,2025-07-14,Monday,16:00-17:00,Patient Education,Cardiac Care Unit,Discharge planning and education
+5,2025-07-14,Monday,17:00-19:00,Documentation,Nursing Station,Patient charts and care plans
+5,2025-07-15,Tuesday,07:00-08:00,Cardiac Unit Rounds,Cardiac Care Unit,Patient assessments with cardiology team
+5,2025-07-15,Tuesday,08:00-12:00,Patient Care,Cardiac Care Unit,Direct patient care and monitoring
+5,2025-07-15,Tuesday,12:00-13:00,Lunch Break,Staff Break Room,
+5,2025-07-15,Tuesday,13:00-16:00,Outpatient Cardiac Clinic,Cardiac Clinic,Follow-up appointments
+5,2025-07-15,Tuesday,16:00-17:00,Care Coordination,Nursing Station,Coordinating patient care plans
+5,2025-07-15,Tuesday,17:00-19:00,Documentation,Nursing Station,Patient charts and care plans
+5,2025-07-16,Wednesday,07:00-08:00,Cardiac Unit Rounds,Cardiac Care Unit,Patient assessments with cardiology team
+5,2025-07-16,Wednesday,08:00-12:00,Patient Care,Cardiac Care Unit,Direct patient care and monitoring
+5,2025-07-16,Wednesday,12:00-13:00,Lunch Break,Staff Break Room,
+5,2025-07-16,Wednesday,13:00-15:00,Cardiac Procedures,Cardiac Catheterization Lab,Assisting with procedures
+5,2025-07-16,Wednesday,15:00-16:00,Staff Meeting,Cardiac Unit Conference Room,Nursing staff meeting
+5,2025-07-16,Wednesday,16:00-17:00,Patient Education,Cardiac Care Unit,Heart health education
+5,2025-07-16,Wednesday,17:00-19:00,Documentation,Nursing Station,Patient charts and care plans
+5,2025-07-17,Thursday,07:00-08:00,Cardiac Unit Rounds,Cardiac Care Unit,Patient assessments with cardiology team
+5,2025-07-17,Thursday,08:00-12:00,Patient Care,Cardiac Care Unit,Direct patient care and monitoring
+5,2025-07-17,Thursday,12:00-13:00,Lunch Break,Staff Break Room,
+5,2025-07-17,Thursday,13:00-16:00,Outpatient Cardiac Clinic,Cardiac Clinic,Follow-up appointments
+5,2025-07-17,Thursday,16:00-17:00,Quality Improvement,Nursing Station,Cardiac care quality metrics
+5,2025-07-17,Thursday,17:00-19:00,Documentation,Nursing Station,Patient charts and care plans
+5,2025-07-18,Friday,07:00-08:00,Cardiac Unit Rounds,Cardiac Care Unit,Patient assessments with cardiology team
+5,2025-07-18,Friday,08:00-12:00,Patient Care,Cardiac Care Unit,Direct patient care and monitoring
+5,2025-07-18,Friday,12:00-13:00,Lunch Break,Staff Break Room,
+5,2025-07-18,Friday,13:00-16:00,Cardiac Procedures,Cardiac Catheterization Lab,Assisting with procedures
+5,2025-07-18,Friday,16:00-17:00,Case Review,Cardiac Unit Conference Room,Weekly patient case discussions
+5,2025-07-18,Friday,17:00-19:00,Documentation,Nursing Station,Patient charts and care plans
+7,2025-07-05,Saturday,08:00-09:00,Administrative Tasks,Home Office,Weekend coverage
+7,2025-07-05,Saturday,09:00-12:00,On-call Coverage,Hospital,Emergency orthopedic consultations
+7,2025-07-05,Saturday,12:00-13:00,Lunch Break,,
+7,2025-07-05,Saturday,13:00-17:00,On-call Coverage,Hospital,Emergency orthopedic consultations
+7,2025-07-06,Sunday,08:00-09:00,Administrative Tasks,Home Office,Chart review
+7,2025-07-06,Sunday,09:00-12:00,On-call Coverage,Hospital,Emergency orthopedic consultations
+7,2025-07-06,Sunday,12:00-13:00,Lunch Break,,
+7,2025-07-06,Sunday,13:00-17:00,On-call Coverage,Hospital,Emergency orthopedic consultations
+7,2025-07-07,Monday,06:00-07:00,Pre-operative Preparation,Hospital,Review surgical cases
+7,2025-07-07,Monday,07:00-12:00,Orthopedic Surgery,OR,Assisting attending surgeon
+7,2025-07-07,Monday,12:00-13:00,Lunch Break,,
+7,2025-07-07,Monday,13:00-15:00,Post-operative Care,Hospital,Patient follow-up
+7,2025-07-07,Monday,15:00-16:00,Documentation,Office 1104,Surgical notes
+7,2025-07-07,Monday,16:00-17:00,Orthopedic Clinic,Office 1104,Outpatient consultations
+7,2025-07-07,Monday,17:00-18:00,Fellow Education,Conference Room,Case presentations
+7,2025-07-08,Tuesday,06:00-07:00,Pre-operative Preparation,Hospital,Review surgical cases
+7,2025-07-08,Tuesday,07:00-12:00,Orthopedic Surgery,OR,Assisting attending surgeon
+7,2025-07-08,Tuesday,12:00-13:00,Lunch Break,,
+7,2025-07-08,Tuesday,13:00-15:00,Orthopedic Clinic,Office 1104,Outpatient consultations
+7,2025-07-08,Tuesday,15:00-16:00,Documentation,Office 1104,Patient notes
+7,2025-07-08,Tuesday,16:00-17:00,Radiology Review,Radiology Dept,X-ray and MRI review
+7,2025-07-08,Tuesday,17:00-18:00,Research Activities,Office 1104,Clinical studies
+7,2025-07-09,Wednesday,06:00-07:00,Pre-operative Preparation,Hospital,Review surgical cases
+7,2025-07-09,Wednesday,07:00-12:00,Orthopedic Surgery,OR,Assisting attending surgeon
+7,2025-07-09,Wednesday,12:00-13:00,Lunch Break,,
+7,2025-07-09,Wednesday,13:00-15:00,Trauma Consultations,Emergency Dept,Fracture assessments
+7,2025-07-09,Wednesday,15:00-16:00,Documentation,Office 1104,Patient notes
+7,2025-07-09,Wednesday,16:00-17:00,Orthopedic Clinic,Office 1104,Follow-up appointments
+7,2025-07-09,Wednesday,17:00-18:00,Journal Club,Conference Room,Literature review
+7,2025-07-10,Thursday,06:00-07:00,Pre-operative Preparation,Hospital,Review surgical cases
+7,2025-07-10,Thursday,07:00-12:00,Orthopedic Surgery,OR,Assisting attending surgeon
+7,2025-07-10,Thursday,12:00-13:00,Lunch Break,,
+7,2025-07-10,Thursday,13:00-15:00,Orthopedic Clinic,Office 1104,Outpatient consultations
+7,2025-07-10,Thursday,15:00-16:00,Documentation,Office 1104,Patient notes
+7,2025-07-10,Thursday,16:00-17:00,Physical Therapy Consultation,PT Department,Treatment planning
+7,2025-07-10,Thursday,17:00-18:00,Biomechanics Lab,Research Lab,Gait analysis
+7,2025-07-11,Friday,06:00-07:00,Pre-operative Preparation,Hospital,Review surgical cases
+7,2025-07-11,Friday,07:00-12:00,Orthopedic Surgery,OR,Assisting attending surgeon
+7,2025-07-11,Friday,12:00-13:00,Lunch Break,,
+7,2025-07-11,Friday,13:00-15:00,Post-operative Rounds,Hospital,Surgical follow-up
+7,2025-07-11,Friday,15:00-16:00,Documentation,Office 1104,Weekly notes
+7,2025-07-11,Friday,16:00-17:00,Orthopedic Clinic,Office 1104,Outpatient consultations
+7,2025-07-11,Friday,17:00-18:00,Fellow Seminar,Conference Room,Educational presentation
+7,2025-07-12,Saturday,08:00-09:00,Administrative Tasks,Home Office,Weekend planning
+7,2025-07-12,Saturday,09:00-12:00,On-call Coverage,Hospital,Emergency orthopedic consultations
+7,2025-07-12,Saturday,12:00-13:00,Lunch Break,,
+7,2025-07-12,Saturday,13:00-17:00,On-call Coverage,Hospital,Emergency orthopedic consultations
+7,2025-07-13,Sunday,08:00-09:00,Administrative Tasks,Home Office,Research writing
+7,2025-07-13,Sunday,09:00-12:00,On-call Coverage,Hospital,Emergency orthopedic consultations
+7,2025-07-13,Sunday,12:00-13:00,Lunch Break,,
+7,2025-07-13,Sunday,13:00-17:00,On-call Coverage,Hospital,Emergency orthopedic consultations
+7,2025-07-14,Monday,06:00-07:00,Pre-operative Preparation,Hospital,Review surgical cases
+7,2025-07-14,Monday,07:00-12:00,Orthopedic Surgery,OR,Assisting attending surgeon
+7,2025-07-14,Monday,12:00-13:00,Lunch Break,,
+7,2025-07-14,Monday,13:00-15:00,Post-operative Care,Hospital,Patient follow-up
+7,2025-07-14,Monday,15:00-16:00,Documentation,Office 1104,Surgical notes
+7,2025-07-14,Monday,16:00-17:00,Orthopedic Clinic,Office 1104,Outpatient consultations
+7,2025-07-14,Monday,17:00-18:00,Fellow Education,Conference Room,Case presentations
+7,2025-07-15,Tuesday,06:00-07:00,Pre-operative Preparation,Hospital,Review surgical cases
+7,2025-07-15,Tuesday,07:00-12:00,Orthopedic Surgery,OR,Assisting attending surgeon
+7,2025-07-15,Tuesday,12:00-13:00,Lunch Break,,
+7,2025-07-15,Tuesday,13:00-15:00,Orthopedic Clinic,Office 1104,Outpatient consultations
+7,2025-07-15,Tuesday,15:00-16:00,Documentation,Office 1104,Patient notes
+7,2025-07-15,Tuesday,16:00-17:00,Radiology Review,Radiology Dept,X-ray and MRI review
+7,2025-07-15,Tuesday,17:00-18:00,Research Activities,Office 1104,Clinical studies
+7,2025-07-16,Wednesday,06:00-07:00,Pre-operative Preparation,Hospital,Review surgical cases
+7,2025-07-16,Wednesday,07:00-12:00,Orthopedic Surgery,OR,Assisting attending surgeon
+7,2025-07-16,Wednesday,12:00-13:00,Lunch Break,,
+7,2025-07-16,Wednesday,13:00-15:00,Trauma Consultations,Emergency Dept,Fracture assessments
+7,2025-07-16,Wednesday,15:00-16:00,Documentation,Office 1104,Patient notes
+7,2025-07-16,Wednesday,16:00-17:00,Orthopedic Clinic,Office 1104,Follow-up appointments
+7,2025-07-16,Wednesday,17:00-18:00,Journal Club,Conference Room,Literature review
+7,2025-07-17,Thursday,06:00-07:00,Pre-operative Preparation,Hospital,Review surgical cases
+7,2025-07-17,Thursday,07:00-12:00,Orthopedic Surgery,OR,Assisting attending surgeon
+7,2025-07-17,Thursday,12:00-13:00,Lunch Break,,
+7,2025-07-17,Thursday,13:00-15:00,Orthopedic Clinic,Office 110,
+8,2025-07-05,Saturday,08:00-09:00,Administrative Tasks,Home Office,Weekend coverage
+8,2025-07-05,Saturday,09:00-12:00,On-call Coverage,Hospital,Emergency oncology consultations
+8,2025-07-05,Saturday,12:00-13:00,Lunch Break,,
+8,2025-07-05,Saturday,13:00-17:00,On-call Coverage,Hospital,Emergency oncology consultations
+8,2025-07-06,Sunday,08:00-09:00,Administrative Tasks,Home Office,Chart review
+8,2025-07-06,Sunday,09:00-12:00,On-call Coverage,Hospital,Emergency oncology consultations
+8,2025-07-06,Sunday,12:00-13:00,Lunch Break,,
+8,2025-07-06,Sunday,13:00-17:00,On-call Coverage,Hospital,Emergency oncology consultations
+8,2025-07-07,Monday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+8,2025-07-07,Monday,09:00-12:00,Outpatient Clinic,Office 1105,Scheduled appointments
+8,2025-07-07,Monday,12:00-13:00,Lunch Break,,
+8,2025-07-07,Monday,13:00-15:00,Chemotherapy Administration,Infusion Center,Patient treatments
+8,2025-07-07,Monday,15:00-16:00,Documentation,Office 1105,Treatment notes
+8,2025-07-07,Monday,16:00-17:00,Multidisciplinary Team Meeting,Conference Room,Case discussions
+8,2025-07-07,Monday,17:00-18:00,Family Conferences,Office 1105,Patient consultations
+8,2025-07-08,Tuesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+8,2025-07-08,Tuesday,09:00-12:00,Outpatient Clinic,Office 1105,Scheduled appointments
+8,2025-07-08,Tuesday,12:00-13:00,Lunch Break,,
+8,2025-07-08,Tuesday,13:00-15:00,Bone Marrow Procedures,Procedure Room,Biopsies and aspirations
+8,2025-07-08,Tuesday,15:00-16:00,Documentation,Office 1105,Procedure notes
+8,2025-07-08,Tuesday,16:00-17:00,Pathology Review,Pathology Dept,Microscopic examination
+8,2025-07-08,Tuesday,17:00-18:00,Research Activities,Office 1105,Clinical trials
+8,2025-07-09,Wednesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+8,2025-07-09,Wednesday,09:00-12:00,Outpatient Clinic,Office 1105,Scheduled appointments
+8,2025-07-09,Wednesday,12:00-13:00,Lunch Break,,
+8,2025-07-09,Wednesday,13:00-15:00,Chemotherapy Administration,Infusion Center,Patient treatments
+8,2025-07-09,Wednesday,15:00-16:00,Documentation,Office 1105,Treatment notes
+8,2025-07-09,Wednesday,16:00-17:00,Tumor Board Meeting,Conference Room,Case presentations
+8,2025-07-09,Wednesday,17:00-18:00,Clinical Research,Office 1105,Protocol development
+8,2025-07-10,Thursday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+8,2025-07-10,Thursday,09:00-12:00,Outpatient Clinic,Office 1105,Scheduled appointments
+8,2025-07-10,Thursday,12:00-13:00,Lunch Break,,
+8,2025-07-10,Thursday,13:00-15:00,Intrathecal Procedures,Procedure Room,Spinal tap treatments
+8,2025-07-10,Thursday,15:00-16:00,Documentation,Office 1105,Procedure notes
+8,2025-07-10,Thursday,16:00-17:00,Palliative Care Consultation,Hospital,Comfort care planning
+8,2025-07-10,Thursday,17:00-18:00,Educational Activities,Conference Room,Medical education
+8,2025-07-11,Friday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+8,2025-07-11,Friday,09:00-12:00,Outpatient Clinic,Office 1105,Scheduled appointments
+8,2025-07-11,Friday,12:00-13:00,Lunch Break,,
+8,2025-07-11,Friday,13:00-15:00,Chemotherapy Administration,Infusion Center,Patient treatments
+8,2025-07-11,Friday,15:00-16:00,Documentation,Office 1105,Weekly notes
+8,2025-07-11,Friday,16:00-17:00,Family Conferences,Office 1105,Treatment discussions
+8,2025-07-11,Friday,17:00-18:00,Quality Improvement,Office 1105,Safety protocols
+8,2025-07-12,Saturday,08:00-09:00,Administrative Tasks,Home Office,Weekend planning
+8,2025-07-12,Saturday,09:00-12:00,On-call Coverage,Hospital,Emergency oncology consultations
+8,2025-07-12,Saturday,12:00-13:00,Lunch Break,,
+8,2025-07-12,Saturday,13:00-17:00,On-call Coverage,Hospital,Emergency oncology consultations
+8,2025-07-13,Sunday,08:00-09:00,Administrative Tasks,Home Office,Research writing
+8,2025-07-13,Sunday,09:00-12:00,On-call Coverage,Hospital,Emergency oncology consultations
+8,2025-07-13,Sunday,12:00-13:00,Lunch Break,,
+8,2025-07-13,Sunday,13:00-17:00,On-call Coverage,Hospital,Emergency oncology consultations
+8,2025-07-14,Monday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+8,2025-07-14,Monday,09:00-12:00,Outpatient Clinic,Office 1105,Scheduled appointments
+8,2025-07-14,Monday,12:00-13:00,Lunch Break,,
+8,2025-07-14,Monday,13:00-15:00,Chemotherapy Administration,Infusion Center,Patient treatments
+8,2025-07-14,Monday,15:00-16:00,Documentation,Office 1105,Treatment notes
+8,2025-07-14,Monday,16:00-17:00,Multidisciplinary Team Meeting,Conference Room,Case discussions
+8,2025-07-14,Monday,17:00-18:00,Family Conferences,Office 1105,Patient consultations
+8,2025-07-15,Tuesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+8,2025-07-15,Tuesday,09:00-12:00,Outpatient Clinic,Office 1105,Scheduled appointments
+8,2025-07-15,Tuesday,12:00-13:00,Lunch Break,,
+8,2025-07-15,Tuesday,13:00-15:00,Bone Marrow Procedures,Procedure Room,Biopsies and aspirations
+8,2025-07-15,Tuesday,15:00-16:00,Documentation,Office 1105,Procedure notes
+8,2025-07-15,Tuesday,16:00-17:00,Pathology Review,Pathology Dept,Microscopic examination
+8,2025-07-15,Tuesday,17:00-18:00,Research Activities,Office 1105,Clinical trials
+8,2025-07-16,Wednesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+8,2025-07-16,Wednesday,09:00-12:00,Outpatient Clinic,Office 1105,Scheduled appointments
+8,2025-07-16,Wednesday,12:00-13:00,Lunch Break,,
+8,2025-07-16,Wednesday,13:00-15:00,Chemotherapy Administration,Infusion Center,Patient treatments
+8,2025-07-16,Wednesday,15:00-16:00,Documentation,Office 1105,Treatment notes
+8,2025-07-16,Wednesday,16:00-17:00,Tumor Board Meeting,Conference Room,Case presentations
+8,2025-07-16,Wednesday,17:00-18:00,Clinical Research,Office 1105,Protocol development
+8,2025-07-17,Thursday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+8,2025-07-17,Thursday,09:00-12:00,Outpatient Clinic,Office 1105,Scheduled appointments
+8,2025-07-17,Thursday,12:00-13:00,Lunch Break,,
+8,2025-07-17,Thursday,13:00-15:00,Intrathecal Procedures,Procedure Room,Spinal tap treatments
+8,2025-07-17,Thursday,15:00-16:00,Documentation,Office 1105,Procedure notes
+8,2025-07-17,Thursday,16:00-17:00,Palliative Care Consultation,Hospital,Comfort care planning
+8,2025-07-17,Thursday,17:00-18:00,Educational Activities,Conference Room,Medical education
+8,2025-07-18,Friday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+8,2025-07-18,Friday,09:00-12:00,Outpatient Clinic,Office 1105,Scheduled appointments
+8,2025-07-18,Friday,12:00-13:00,Lunch Break,,
+8,2025-07-18,Friday,13:00-15:00,Chemotherapy Administration,Infusion Center,Patient treatments
+8,2025-07-18,Friday,15:00-16:00,Documentation,Office 1105,Weekly notes
+8,2025-07-18,Friday,16:00-17:00,Family Conferences,Office 1105,Treatment discussions
+8,2025-07-18,Friday,17:00-18:00,Quality Improvement,Office 1105,Safety protocols
+9,2025-07-05,Saturday,08:00-09:00,Administrative Tasks,Home Office,Weekend coverage
+9,2025-07-05,Saturday,09:00-12:00,On-call Coverage,Hospital,Emergency neuropsychology consultations
+9,2025-07-05,Saturday,12:00-13:00,Lunch Break,,
+9,2025-07-05,Saturday,13:00-17:00,On-call Coverage,Hospital,Emergency neuropsychology consultations
+9,2025-07-06,Sunday,08:00-09:00,Administrative Tasks,Home Office,Report writing
+9,2025-07-06,Sunday,09:00-12:00,On-call Coverage,Hospital,Emergency neuropsychology consultations
+9,2025-07-06,Sunday,12:00-13:00,Lunch Break,,
+9,2025-07-06,Sunday,13:00-17:00,On-call Coverage,Hospital,Emergency neuropsychology consultations
+9,2025-07-07,Monday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+9,2025-07-07,Monday,09:00-12:00,Neuropsychological Assessment,Office 1106,Cognitive testing
+9,2025-07-07,Monday,12:00-13:00,Lunch Break,,
+9,2025-07-07,Monday,13:00-15:00,Neuropsychological Assessment,Office 1106,Cognitive testing
+9,2025-07-07,Monday,15:00-16:00,Report Writing,Office 1106,Assessment reports
+9,2025-07-07,Monday,16:00-17:00,Multidisciplinary Team Meeting,Conference Room,Case discussions
+9,2025-07-07,Monday,17:00-18:00,Family Conferences,Office 1106,Results interpretation
+9,2025-07-08,Tuesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+9,2025-07-08,Tuesday,09:00-12:00,Neuropsychological Assessment,Office 1106,Memory testing
+9,2025-07-08,Tuesday,12:00-13:00,Lunch Break,,
+9,2025-07-08,Tuesday,13:00-15:00,Neuropsychological Assessment,Office 1106,Executive function testing
+9,2025-07-08,Tuesday,15:00-16:00,Report Writing,Office 1106,Assessment reports
+9,2025-07-08,Tuesday,16:00-17:00,Cognitive Rehabilitation,Office 1106,Therapy sessions
+9,2025-07-08,Tuesday,17:00-18:00,Research Activities,Office 1106,Data analysis
+9,2025-07-09,Wednesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+9,2025-07-09,Wednesday,09:00-12:00,Neuropsychological Assessment,Office 1106,Attention testing
+9,2025-07-09,Wednesday,12:00-13:00,Lunch Break,,
+9,2025-07-09,Wednesday,13:00-15:00,Neuropsychological Assessment,Office 1106,Language testing
+9,2025-07-09,Wednesday,15:00-16:00,Report Writing,Office 1106,Assessment reports
+9,2025-07-09,Wednesday,16:00-17:00,Neurology Consultation,Neurology Dept,Collaborative care
+9,2025-07-09,Wednesday,17:00-18:00,Clinical Research,Office 1106,Protocol development
+9,2025-07-10,Thursday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+9,2025-07-10,Thursday,09:00-12:00,Neuropsychological Assessment,Office 1106,Visuospatial testing
+9,2025-07-10,Thursday,12:00-13:00,Lunch Break,,
+9,2025-07-10,Thursday,13:00-15:00,Cognitive Rehabilitation,Office 1106,Therapy sessions
+9,2025-07-10,Thursday,15:00-16:00,Report Writing,Office 1106,Treatment notes
+9,2025-07-10,Thursday,16:00-17:00,Psychiatric Consultation,Psychiatry Dept,Collaborative care
+9,2025-07-10,Thursday,17:00-18:00,Educational Activities,Conference Room,Teaching sessions
+9,2025-07-11,Friday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+9,2025-07-11,Friday,09:00-12:00,Neuropsychological Assessment,Office 1106,Comprehensive testing
+9,2025-07-11,Friday,12:00-13:00,Lunch Break,,
+9,2025-07-11,Friday,13:00-15:00,Neuropsychological Assessment,Office 1106,Comprehensive testing
+9,2025-07-11,Friday,15:00-16:00,Report Writing,Office 1106,Weekly reports
+9,2025-07-11,Friday,16:00-17:00,Family Conferences,Office 1106,Treatment planning
+9,2025-07-11,Friday,17:00-18:00,Quality Improvement,Office 1106,Program evaluation
+9,2025-07-12,Saturday,08:00-09:00,Administrative Tasks,Home Office,Weekend planning
+9,2025-07-12,Saturday,09:00-12:00,On-call Coverage,Hospital,Emergency neuropsychology consultations
+9,2025-07-12,Saturday,12:00-13:00,Lunch Break,,
+9,2025-07-12,Saturday,13:00-17:00,On-call Coverage,Hospital,Emergency neuropsychology consultations
+9,2025-07-13,Sunday,08:00-09:00,Administrative Tasks,Home Office,Research writing
+9,2025-07-13,Sunday,09:00-12:00,On-call Coverage,Hospital,Emergency neuropsychology consultations
+9,2025-07-13,Sunday,12:00-13:00,Lunch Break,,
+9,2025-07-13,Sunday,13:00-17:00,On-call Coverage,Hospital,Emergency neuropsychology consultations
+9,2025-07-14,Monday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+9,2025-07-14,Monday,09:00-12:00,Neuropsychological Assessment,Office 1106,Cognitive testing
+9,2025-07-14,Monday,12:00-13:00,Lunch Break,,
+9,2025-07-14,Monday,13:00-15:00,Neuropsychological Assessment,Office 1106,Cognitive testing
+9,2025-07-14,Monday,15:00-16:00,Report Writing,Office 1106,Assessment reports
+9,2025-07-14,Monday,16:00-17:00,Multidisciplinary Team Meeting,Conference Room,Case discussions
+9,2025-07-14,Monday,17:00-18:00,Family Conferences,Office 1106,Results interpretation
+9,2025-07-15,Tuesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+9,2025-07-15,Tuesday,09:00-12:00,Neuropsychological Assessment,Office 1106,Memory testing
+9,2025-07-15,Tuesday,12:00-13:00,Lunch Break,,
+9,2025-07-15,Tuesday,13:00-15:00,Neuropsychological Assessment,Office 1106,Executive function testing
+9,2025-07-15,Tuesday,15:00-16:00,Report Writing,Office 1106,Assessment reports
+9,2025-07-15,Tuesday,16:00-17:00,Cognitive Rehabilitation,Office 1106,Therapy sessions
+9,2025-07-15,Tuesday,17:00-18:00,Research Activities,Office 1106,Data analysis
+9,2025-07-16,Wednesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+9,2025-07-16,Wednesday,09:00-12:00,Neuropsychological Assessment,Office 1106,Attention testing
+9,2025-07-16,Wednesday,12:00-13:00,Lunch Break,,
+9,2025-07-16,Wednesday,13:00-15:00,Neuropsychological Assessment,Office 1106,Language testing
+9,2025-07-16,Wednesday,15:00-16:00,Report Writing,Office 1106,Assessment reports
+9,2025-07-16,Wednesday,16:00-17:00,Neurology Consultation,Neurology Dept,Collaborative care
+9,2025-07-16,Wednesday,17:00-18:00,Clinical Research,Office 1106,Protocol development
+9,2025-07-17,Thursday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+9,2025-07-17,Thursday,09:00-12:00,Neuropsychological Assessment,Office 1106,Visuospatial testing
+9,2025-07-17,Thursday,12:00-13:00,Lunch Break,,
+9,2025-07-17,Thursday,13:00-15:00,Cognitive Rehabilitation,Office 1106,Therapy sessions
+9,2025-07-17,Thursday,15:00-16:00,Report Writing,Office 1106,Treatment notes
+9,2025-07-17,Thursday,16:00-17:00,Psychiatric Consultation,Psychiatry Dept,Collaborative care
+9,2025-07-17,Thursday,17:00-18:00,Educational Activities,Conference Room,Teaching sessions
+9,2025-07-18,Friday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+9,2025-07-18,Friday,09:00-12:00,Neuropsychological Assessment,Office 1106,Comprehensive testing
+9,2025-07-18,Friday,12:00-13:00,Lunch Break,,
+9,2025-07-18,Friday,13:00-15:00,Neuropsychological Assessment,Office 1106,Comprehensive testing
+9,2025-07-18,Friday,15:00-16:00,Report Writing,Office 1106,Weekly reports
+9,2025-07-18,Friday,16:00-17:00,Family Conferences,Office 1106,Treatment planning
+9,2025-07-18,Friday,17:00-18:00,Quality Improvement,Office 1106,Program evaluation
+10,2025-07-05,Saturday,08:00-09:00,Administrative Tasks,Home Office,Weekend coverage
+10,2025-07-05,Saturday,09:00-12:00,On-call Coverage,Hospital,Emergency ophthalmology consultations
+10,2025-07-05,Saturday,12:00-13:00,Lunch Break,,
+10,2025-07-05,Saturday,13:00-17:00,On-call Coverage,Hospital,Emergency ophthalmology consultations
+10,2025-07-06,Sunday,08:00-09:00,Administrative Tasks,Home Office,Chart review
+10,2025-07-06,Sunday,09:00-12:00,On-call Coverage,Hospital,Emergency ophthalmology consultations
+10,2025-07-06,Sunday,12:00-13:00,Lunch Break,,
+10,2025-07-06,Sunday,13:00-17:00,On-call Coverage,Hospital,Emergency ophthalmology consultations
+10,2025-07-07,Monday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+10,2025-07-07,Monday,09:00-12:00,Outpatient Clinic,Shared Space,Scheduled appointments
+10,2025-07-07,Monday,12:00-13:00,Lunch Break,,
+10,2025-07-07,Monday,13:00-15:00,Pediatric Eye Surgery,OR,Surgical procedures
+10,2025-07-07,Monday,15:00-16:00,Documentation,Shared Space,Surgical notes
+10,2025-07-07,Monday,16:00-17:00,Retinal Examinations,Shared Space,Diagnostic procedures
+10,2025-07-07,Monday,17:00-18:00,Multidisciplinary Team Meeting,Conference Room,Case discussions
+10,2025-07-08,Tuesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+10,2025-07-08,Tuesday,09:00-12:00,Outpatient Clinic,Shared Space,Scheduled appointments
+10,2025-07-08,Tuesday,12:00-13:00,Lunch Break,,
+10,2025-07-08,Tuesday,13:00-15:00,Strabismus Evaluations,Shared Space,Muscle alignment assessments
+10,2025-07-08,Tuesday,15:00-16:00,Documentation,Shared Space,Patient notes
+10,2025-07-08,Tuesday,16:00-17:00,Optical Coherence Tomography,Shared Space,OCT imaging
+10,2025-07-08,Tuesday,17:00-18:00,Research Activities,Home Office,Clinical studies
+10,2025-07-09,Wednesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+10,2025-07-09,Wednesday,09:00-12:00,Outpatient Clinic,Shared Space,Scheduled appointments
+10,2025-07-09,Wednesday,12:00-13:00,Lunch Break,,
+10,2025-07-09,Wednesday,13:00-15:00,Pediatric Eye Surgery,OR,Surgical procedures
+10,2025-07-09,Wednesday,15:00-16:00,Documentation,Shared Space,Surgical notes
+10,2025-07-09,Wednesday,16:00-17:00,Glaucoma Evaluations,Shared Space,Pressure testing
+10,2025-07-09,Wednesday,17:00-18:00,Family Conferences,Shared Space,Treatment discussions
+10,2025-07-10,Thursday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+10,2025-07-10,Thursday,09:00-12:00,Outpatient Clinic,Shared Space,Scheduled appointments
+10,2025-07-10,Thursday,12:00-13:00,Lunch Break,,
+10,2025-07-10,Thursday,13:00-15:00,Amblyopia Therapy,Shared Space,Vision therapy sessions
+10,2025-07-10,Thursday,15:00-16:00,Documentation,Shared Space,Treatment notes
+10,2025-07-10,Thursday,16:00-17:00,Fluorescein Angiography,Shared Space,Retinal imaging
+10,2025-07-10,Thursday,17:00-18:00,Educational Activities,Conference Room,Teaching sessions
+10,2025-07-11,Friday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+10,2025-07-11,Friday,09:00-12:00,Outpatient Clinic,Shared Space,Scheduled appointments
+10,2025-07-11,Friday,12:00-13:00,Lunch Break,,
+10,2025-07-11,Friday,13:00-15:00,Pediatric Eye Surgery,OR,Surgical procedures
+10,2025-07-11,Friday,15:00-16:00,Documentation,Shared Space,Weekly notes
+10,2025-07-11,Friday,16:00-17:00,Post-operative Care,Shared Space,Surgical follow-up
+10,2025-07-11,Friday,17:00-18:00,Quality Improvement,Home Office,Safety protocols
+10,2025-07-12,Saturday,08:00-09:00,Administrative Tasks,Home Office,Weekend planning
+10,2025-07-12,Saturday,09:00-12:00,On-call Coverage,Hospital,Emergency ophthalmology consultations
+10,2025-07-12,Saturday,12:00-13:00,Lunch Break,,
+10,2025-07-12,Saturday,13:00-17:00,On-call Coverage,Hospital,Emergency ophthalmology consultations
+10,2025-07-13,Sunday,08:00-09:00,Administrative Tasks,Home Office,Research writing
+10,2025-07-13,Sunday,09:00-12:00,On-call Coverage,Hospital,Emergency ophthalmology consultations
+10,2025-07-13,Sunday,12:00-13:00,Lunch Break,,
+10,2025-07-13,Sunday,13:00-17:00,On-call Coverage,Hospital,Emergency ophthalmology consultations
+10,2025-07-14,Monday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+10,2025-07-14,Monday,09:00-12:00,Outpatient Clinic,Shared Space,Scheduled appointments
+10,2025-07-14,Monday,12:00-13:00,Lunch Break,,
+10,2025-07-14,Monday,13:00-15:00,Pediatric Eye Surgery,OR,Surgical procedures
+10,2025-07-14,Monday,15:00-16:00,Documentation,Shared Space,Surgical notes
+10,2025-07-14,Monday,16:00-17:00,Retinal Examinations,Shared Space,Diagnostic procedures
+10,2025-07-14,Monday,17:00-18:00,Multidisciplinary Team Meeting,Conference Room,Case discussions
+10,2025-07-15,Tuesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+10,2025-07-15,Tuesday,09:00-12:00,Outpatient Clinic,Shared Space,Scheduled appointments
+10,2025-07-15,Tuesday,12:00-13:00,Lunch Break,,
+10,2025-07-15,Tuesday,13:00-15:00,Strabismus Evaluations,Shared Space,Muscle alignment assessments
+10,2025-07-15,Tuesday,15:00-16:00,Documentation,Shared Space,Patient notes
+10,2025-07-15,Tuesday,16:00-17:00,Optical Coherence Tomography,Shared Space,OCT imaging
+10,2025-07-15,Tuesday,17:00-18:00,Research Activities,Home Office,Clinical studies
+10,2025-07-16,Wednesday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+10,2025-07-16,Wednesday,09:00-12:00,Outpatient Clinic,Shared Space,Scheduled appointments
+10,2025-07-16,Wednesday,12:00-13:00,Lunch Break,,
+10,2025-07-16,Wednesday,13:00-15:00,Pediatric Eye Surgery,OR,Surgical procedures
+10,2025-07-16,Wednesday,15:00-16:00,Documentation,Shared Space,Surgical notes
+10,2025-07-16,Wednesday,16:00-17:00,Glaucoma Evaluations,Shared Space,Pressure testing
+10,2025-07-16,Wednesday,17:00-18:00,Family Conferences,Shared Space,Treatment discussions
+10,2025-07-17,Thursday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+10,2025-07-17,Thursday,09:00-12:00,Outpatient Clinic,Shared Space,Scheduled appointments
+10,2025-07-17,Thursday,12:00-13:00,Lunch Break,,
+10,2025-07-17,Thursday,13:00-15:00,Amblyopia Therapy,Shared Space,Vision therapy sessions
+10,2025-07-17,Thursday,15:00-16:00,Documentation,Shared Space,Treatment notes
+10,2025-07-17,Thursday,16:00-17:00,Fluorescein Angiography,Shared Space,Retinal imaging
+10,2025-07-17,Thursday,17:00-18:00,Educational Activities,Conference Room,Teaching sessions
+10,2025-07-18,Friday,08:00-09:00,Morning Rounds,Hospital,Inpatient consultations
+10,2025-07-18,Friday,09:00-12:00,Outpatient Clinic,Shared Space,Scheduled appointments
+10,2025-07-18,Friday,12:00-13:00,Lunch Break,,
+10,2025-07-18,Friday,13:00-15:00,Pediatric Eye Surgery,OR,Surgical procedures
+10,2025-07-18,Friday,15:00-16:00,Documentation,Shared Space,Weekly notes
+10,2025-07-18,Friday,16:00-17:00,Post-operative Care,Shared Space,Surgical follow-up
+10,2025-07-18,Friday,17:00-18:00,Quality Improvement,Home Office,Safety protocols

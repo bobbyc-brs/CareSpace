@@ -1,121 +1,121 @@
-Space ID,Name,Category,Area (sqm),Capacity (people),Specialized Equipment,Conference Equip.,Bookable
-1008,Emergency Triage,Clinical,25,3,"ECG, monitors",None,No
-1009,Emergency Treatment #1,Clinical,35,2,Crash cart,None,No
-1010,Emergency Treatment #2,Clinical,35,2,Crash cart,None,No
-1011,ICU Room #1,Clinical,30,1,Ventilator,None,No
-1012,ICU Room #2,Clinical,30,1,Ventilator,None,No
-1013,Inpatient Room #1,Clinical,22,1,"Bed, oxygen",None,No
-1014,Inpatient Room #2,Clinical,22,1,"Bed, oxygen",None,No
-1015,Inpatient Room #3,Clinical,22,1,"Bed, oxygen",None,No
-1016,Inpatient Room #4,Clinical,22,1,"Bed, oxygen",None,No
-1017,Pediatric Ward,Clinical,60,4,"Beds, monitors",None,No
-1018,Maternity Ward,Clinical,60,4,OB equipment,None,No
-1019,NICU,Clinical,45,3,Incubators,None,No
-1020,Day Surgery Prep,Clinical,30,5,Beds,None,No
-1021,Post-Anesthesia Care,Clinical,40,6,Monitoring,None,No
-1022,Isolation Room,Clinical,30,1,Negative pressure,None,No
-1023,Operating Room #1,Surgical,65,8,Surgical tower,AV system,No
-1024,Operating Room #2,Surgical,65,8,Surgical tower,AV system,No
-1025,Hybrid OR,Surgical,70,10,Imaging suite,AV system,No
-1026,Endoscopy Suite,Surgical,50,6,Endoscopy tower,AV system,No
-1027,Pre-Op Holding,Surgical,40,6,Beds,None,No
-1028,Post-Op Recovery,Surgical,40,8,Recliners,None,No
-1029,Sterile Processing,Surgical,35,4,Autoclaves,None,No
-1030,Surgical Supply Storage,Surgical,30,2,"Racks, storage",None,No
-1031,MRI Suite,Diagnostic,55,3,3T MRI,None,No
-1032,CT Suite,Diagnostic,45,2,CT Scanner,None,No
-1033,X-Ray Room,Diagnostic,30,2,X-Ray,None,No
-1034,Ultrasound Suite,Diagnostic,25,2,Ultrasound,None,No
-1035,Interventional Radiology,Diagnostic,60,5,Fluoroscopy,AV system,No
-1046,Molecular Lab,Research,45,6,"PCR, fume hood",None,No
-1047,Imaging Lab,Research,50,4,Confocal microscope,None,No
-1048,Clinical Trials Unit,Research,40,8,Exam rooms,None,No
-1049,Bioinformatics Lab,Research,35,5,Servers,None,No
-1050,Wet Lab #1,Research,45,6,Lab benches,None,No
-1051,Wet Lab #2,Research,45,6,Lab benches,None,No
-1052,Research Office #1,Research,15,2,Computers,None,No
-1053,Research Office #2,Research,15,2,Computers,None,No
-1054,Specimen Processing,Research,30,4,Fridges,None,No
-1055,Research Conf. Room,Research,40,12,Boardroom,Full AV,No
-1065,Pediatric ER,Clinical,40,5,Child-sized beds,None,No
-1066,Pediatric ICU Room #1,Clinical,28,1,Pediatric ventilator,None,No
-1067,Pediatric ICU Room #2,Clinical,28,1,Pediatric ventilator,None,No
-1068,Pediatric Isolation Room,Clinical,30,1,Negative pressure,None,No
-1069,Pediatric Recovery,Surgical,35,4,Monitors,None,No
-1070,Pediatric Surgery OR,Surgical,55,6,Child surgical equipment,AV system,No
-1073,Pediatric Imaging MRI,Diagnostic,50,2,Small bore MRI,None,No
-1074,Pediatric Research Lab,Research,35,4,Pediatric study equipment,None,No
-1076,Phlebotomy Station,Clinical,25,3,Draw chairs,None,No
-1078,Oncology Clinic,Clinical,35,5,Infusion chairs,None,No
-1079,Physiotherapy Gym,Clinical,60,8,Rehab equipment,None,No
-1080,Occupational Therapy,Clinical,40,4,Pediatric OT equipment,None,No
-1081,Pediatric Sleep Study Room,Clinical,25,2,Monitoring systems,None,No
-1082,NICU Isolation Room,Clinical,28,1,"Incubator, negative pressure",None,No
-1083,Speech Therapy Room,Clinical,20,2,Speech aids,None,No
-1084,Outpatient Pediatric Clinic,Clinical,35,5,Exam tables,None,No
-1086,Phlebotomy Station,Clinical,25,3,Draw chairs,None,No
-1088,Oncology Clinic,Clinical,35,5,Infusion chairs,None,No
-1089,Physiotherapy Gym,Clinical,60,8,Rehab equipment,None,No
-1090,Occupational Therapy,Clinical,40,4,Pediatric OT equipment,None,No
-1091,Pediatric Sleep Study Room,Clinical,25,2,Monitoring systems,None,No
-1092,NICU Isolation Room,Clinical,28,1,"Incubator, negative pressure",None,No
-1093,Speech Therapy Room,Clinical,20,2,Speech aids,None,No
-1094,Outpatient Pediatric Clinic,Clinical,35,5,Exam tables,None,No
-1096,Phlebotomy Station,Clinical,25,3,Draw chairs,None,No
-1098,Oncology Clinic,Clinical,35,5,Infusion chairs,None,No
-1099,Physiotherapy Gym,Clinical,60,8,Rehab equipment,None,No
-1000,Main Lobby,Public,100,30,None,Digital display,No
-1001,Family Waiting Area,Public,80,20,None,None,No
-1002,Meditation/Chapel,Public,30,15,None,None,No
-1003,Cafeteria,Public,200,100,Food service,Digital menus,No
-1004,Gift Shop,Public,50,10,Retail fixtures,None,No
-1005,Information Desk,Public,20,3,None,None,No
-1007,Public Washroom Block,Public,40,6,None,None,No
-1042,Medical Library,Education,100,40,Digital access,None,No
-1044,Student Lounge,Education,40,15,Lounge furniture,None,No
-1060,Security Office,Admin,20,3,Surveillance,None,No
-1061,Human Resources,Admin,25,4,Desks,None,No
-1062,IT Server Room,Admin,30,2,Racks,None,No
-1063,Mail Room,Admin,15,2,Sort stations,None,No
-1064,Staff Lockers,Admin,25,10,Lockers,None,No
-1071,Child Life Playroom,Support,60,12,"Toys, play equipment",None,No
-1072,Pediatric Family Waiting,Public,60,20,None,None,No
-1006,Volunteer Office,Public,25,4,None,None,Yes
-1036,Lecture Hall #1,Education,150,100,Projector,Full AV,Yes
-1037,Lecture Hall #2,Education,120,80,Projector,Full AV,Yes
-1038,Simulation Lab #1,Education,50,10,Sim manikins,Recording System,Yes
-1039,Simulation Lab #2,Education,50,10,Surgical sim,Recording System,Yes
-1040,Seminar Room A,Education,35,12,Whiteboard,Video Conferencing,Yes
-1041,Seminar Room B,Education,35,12,Whiteboard,Video Conferencing,Yes
-1043,Computer Lab,Education,60,20,PCs,Projector,Yes
-1045,Faculty Workroom,Education,30,6,Printers,None,Yes
-1056,Admin Office #1,Admin,15,2,"Desk, computer",None,Yes
-1057,Admin Office #2,Admin,15,2,"Desk, computer",None,Yes
-1058,Admin Conference,Admin,50,16,Boardroom,Full AV,Yes
-1059,Facilities Office,Admin,20,3,Facilities equip.,None,Yes
-1075,Nursing Education Room,Education,40,15,Projector,Full AV,Yes
-1077,Patient Education Room,Education,30,8,Digital display,AV,Yes
-1085,Nursing Education Room,Education,40,15,Projector,Full AV,Yes
-1087,Patient Education Room,Education,30,8,Digital display,AV,Yes
-1095,Nursing Education Room,Education,40,15,Projector,Full AV,Yes
-1097,Patient Education Room,Education,30,8,Digital display,AV,Yes
-1100,Doctor Office #1001,Admin,14,2,"Desk, computer",None,Yes
-1101,Doctor Office #1002,Admin,14,2,"Desk, computer",None,Yes
-1102,Doctor Office #1003,Admin,14,2,"Desk, computer",None,Yes
-1103,Doctor Office #1004,Admin,14,2,"Desk, computer",None,Yes
-1104,Doctor Office #1005,Admin,14,2,"Desk, computer",None,Yes
-1105,Doctor Office #1006,Admin,14,2,"Desk, computer",None,Yes
-1106,Doctor Office #1007,Admin,14,2,"Desk, computer",None,Yes
-1107,Doctor Office #1008,Admin,14,2,"Desk, computer",None,Yes
-1108,Doctor Office #1009,Admin,14,2,"Desk, computer",None,Yes
-1109,Doctor Office #1010,Admin,14,2,"Desk, computer",None,Yes
-1110,Doctor Office #1011,Admin,14,2,"Desk, computer",None,Yes
-1111,Doctor Office #1012,Admin,14,2,"Desk, computer",None,Yes
-1112,Doctor Office #1013,Admin,14,2,"Desk, computer",None,Yes
-1113,Doctor Office #1014,Admin,14,2,"Desk, computer",None,Yes
-1114,Doctor Office #1015,Admin,14,2,"Desk, computer",None,Yes
-1115,Doctor Office #1016,Admin,14,2,"Desk, computer",None,Yes
-1116,Doctor Office #1017,Admin,14,2,"Desk, computer",None,Yes
-1117,Doctor Office #1018,Admin,14,2,"Desk, computer",None,Yes
-1118,Doctor Office #1019,Admin,14,2,"Desk, computer",None,Yes
-1119,Doctor Office #1020,Admin,14,2,"Desk, computer",None,Yes
+Space ID,SpaceName,Category,Area (sqm),Capacity (people),Specialized Equipment,Conference Equip.,Bookable,uses
+1000,Main Lobby,Public,100,30,None,Digital display,No,Decompression Room
+1001,Family Waiting Area,Public,80,20,None,None,No,Decompression Room
+1003,Cafeteria,Public,200,100,Food service,Digital menus,No,Decompression Room
+1004,Gift Shop,Public,50,10,Retail fixtures,None,No,Decompression Room
+1005,Information Desk,Public,20,3,None,None,No,Decompression Room
+1008,Emergency Triage,Clinical,25,3,"ECG, monitors",None,No,
+1009,Emergency Treatment #1,Clinical,35,2,Crash cart,None,No,
+1010,Emergency Treatment #2,Clinical,35,2,Crash cart,None,No,
+1011,ICU Room #1,Clinical,30,1,Ventilator,None,No,
+1012,ICU Room #2,Clinical,30,1,Ventilator,None,No,
+1013,Inpatient Room #1,Clinical,22,1,"Bed, oxygen",None,No,
+1014,Inpatient Room #2,Clinical,22,1,"Bed, oxygen",None,No,
+1015,Inpatient Room #3,Clinical,22,1,"Bed, oxygen",None,No,
+1016,Inpatient Room #4,Clinical,22,1,"Bed, oxygen",None,No,
+1017,Pediatric Ward,Clinical,60,4,"Beds, monitors",None,No,
+1018,Maternity Ward,Clinical,60,4,OB equipment,None,No,
+1019,NICU,Clinical,45,3,Incubators,None,No,
+1020,Day Surgery Prep,Clinical,30,5,Beds,None,No,
+1021,Post-Anesthesia Care,Clinical,40,6,Monitoring,None,No,
+1022,Isolation Room,Clinical,30,1,Negative pressure,None,No,
+1023,Operating Room #1,Surgical,65,8,Surgical tower,AV system,No,
+1024,Operating Room #2,Surgical,65,8,Surgical tower,AV system,No,
+1025,Hybrid OR,Surgical,70,10,Imaging suite,AV system,No,
+1026,Endoscopy Suite,Surgical,50,6,Endoscopy tower,AV system,No,
+1027,Pre-Op Holding,Surgical,40,6,Beds,None,No,
+1028,Post-Op Recovery,Surgical,40,8,Recliners,None,No,
+1029,Sterile Processing,Surgical,35,4,Autoclaves,None,No,
+1030,Surgical Supply Storage,Surgical,30,2,"Racks, storage",None,No,
+1031,MRI Suite,Diagnostic,55,3,3T MRI,None,No,
+1032,CT Suite,Diagnostic,45,2,CT Scanner,None,No,
+1033,X-Ray Room,Diagnostic,30,2,X-Ray,None,No,
+1034,Ultrasound Suite,Diagnostic,25,2,Ultrasound,None,No,
+1035,Interventional Radiology,Diagnostic,60,5,Fluoroscopy,AV system,No,
+1046,Molecular Lab,Research,45,6,"PCR, fume hood",None,No,
+1047,Imaging Lab,Research,50,4,Confocal microscope,None,No,
+1048,Clinical Trials Unit,Research,40,8,Exam rooms,None,No,
+1049,Bioinformatics Lab,Research,35,5,Servers,None,No,
+1050,Wet Lab #1,Research,45,6,Lab benches,None,No,
+1051,Wet Lab #2,Research,45,6,Lab benches,None,No,
+1052,Research Office #1,Research,15,2,Computers,None,No,
+1053,Research Office #2,Research,15,2,Computers,None,No,
+1054,Specimen Processing,Research,30,4,Fridges,None,No,
+1055,Research Conf. Room,Research,40,12,Boardroom,Full AV,No,
+1065,Pediatric ER,Clinical,40,5,Child-sized beds,None,No,
+1066,Pediatric ICU Room #1,Clinical,28,1,Pediatric ventilator,None,No,
+1067,Pediatric ICU Room #2,Clinical,28,1,Pediatric ventilator,None,No,
+1068,Pediatric Isolation Room,Clinical,30,1,Negative pressure,None,No,
+1069,Pediatric Recovery,Surgical,35,4,Monitors,None,No,
+1070,Pediatric Surgery OR,Surgical,55,6,Child surgical equipment,AV system,No,
+1073,Pediatric Imaging MRI,Diagnostic,50,2,Small bore MRI,None,No,
+1074,Pediatric Research Lab,Research,35,4,Pediatric study equipment,None,No,
+1076,Phlebotomy Station,Clinical,25,3,Draw chairs,None,No,
+1078,Oncology Clinic,Clinical,35,5,Infusion chairs,None,No,
+1079,Physiotherapy Gym,Clinical,60,8,Rehab equipment,None,No,
+1080,Occupational Therapy,Clinical,40,4,Pediatric OT equipment,None,No,
+1081,Pediatric Sleep Study Room,Clinical,25,2,Monitoring systems,None,No,
+1082,NICU Isolation Room,Clinical,28,1,"Incubator, negative pressure",None,No,
+1083,Speech Therapy Room,Clinical,20,2,Speech aids,None,No,
+1084,Outpatient Pediatric Clinic,Clinical,35,5,Exam tables,None,No,
+1086,Phlebotomy Station,Clinical,25,3,Draw chairs,None,No,
+1088,Oncology Clinic,Clinical,35,5,Infusion chairs,None,No,
+1089,Physiotherapy Gym,Clinical,60,8,Rehab equipment,None,No,
+1090,Occupational Therapy,Clinical,40,4,Pediatric OT equipment,None,No,
+1091,Pediatric Sleep Study Room,Clinical,25,2,Monitoring systems,None,No,
+1092,NICU Isolation Room,Clinical,28,1,"Incubator, negative pressure",None,No,
+1093,Speech Therapy Room,Clinical,20,2,Speech aids,None,No,
+1094,Outpatient Pediatric Clinic,Clinical,35,5,Exam tables,None,No,
+1096,Phlebotomy Station,Clinical,25,3,Draw chairs,None,No,
+1098,Oncology Clinic,Clinical,35,5,Infusion chairs,None,No,
+1099,Physiotherapy Gym,Clinical,60,8,Rehab equipment,None,No,
+1002,Meditation/Chapel,Public,30,15,None,None,Yes,Decompression Room
+1006,Volunteer Office,Public,25,4,None,None,Yes,"Administration, Private"
+1007,Public Washroom Block,Public,40,6,None,None,No,"Patient consultation (on site), Patient consultation (virtual on site)"
+1036,Lecture Hall #1,Education,150,100,Projector,Full AV,Yes,Teaching
+1037,Lecture Hall #2,Education,120,80,Projector,Full AV,Yes,Teaching
+1038,Simulation Lab #1,Education,50,10,Sim manikins,Recording System,Yes,"Research, Teaching"
+1039,Simulation Lab #2,Education,50,10,Surgical sim,Recording System,Yes,"Research, Teaching"
+1040,Seminar Room A,Education,35,12,Whiteboard,Video Conferencing,Yes,"Patient consultation (on site), Patient consultation (virtual on site), Teaching"
+1041,Seminar Room B,Education,35,12,Whiteboard,Video Conferencing,Yes,"Patient consultation (on site), Patient consultation (virtual on site), Teaching"
+1042,Medical Library,Education,100,40,Digital access,None,Yes,"Research, Teaching"
+1043,Computer Lab,Education,60,20,PCs,Projector,Yes,"Lab work, Research, Teaching"
+1044,Student Lounge,Education,40,15,Lounge furniture,None,No,Decompression Room
+1045,Faculty Workroom,Education,30,6,Printers,None,Yes,"Patient consultation (on site), Patient consultation (virtual on site), Teaching"
+1056,Admin Office #1,Admin,15,2,"Desk, computer",None,Yes,"Administration, Private"
+1057,Admin Office #2,Admin,15,2,"Desk, computer",None,Yes,"Administration, Private"
+1058,Admin Conference,Admin,50,16,Boardroom,Full AV,Yes,"Administration, Private, Teaching"
+1059,Facilities Office,Admin,20,3,Facilities equip.,None,Yes,"Administration, Private"
+1060,Security Office,Admin,20,3,Surveillance,None,No,"Administration, Private"
+1061,Human Resources,Admin,25,4,Desks,None,No,"Administration, Private"
+1062,IT Server Room,Admin,30,2,Racks,None,No,"Administration, Patient consultation (on site), Patient consultation (virtual on site), Private"
+1063,Mail Room,Admin,15,2,Sort stations,None,No,"Administration, Patient consultation (on site), Patient consultation (virtual on site), Private"
+1064,Staff Lockers,Admin,25,10,Lockers,None,No,"Administration, Private"
+1071,Child Life Playroom,Support,60,12,"Toys, play equipment",None,Yes,"Patient consultation (on site), Patient consultation (virtual on site)"
+1072,Pediatric Family Waiting,Public,60,20,None,None,Yes,Decompression Room
+1075,Nursing Education Room,Education,40,15,Projector,Full AV,Yes,"Patient consultation (on site), Patient consultation (virtual on site), Teaching"
+1077,Patient Education Room,Education,30,8,Digital display,AV,Yes,"Patient consultation (on site), Patient consultation (virtual on site), Teaching"
+1085,Nursing Education Room,Education,40,15,Projector,Full AV,Yes,"Patient consultation (on site), Patient consultation (virtual on site), Teaching"
+1087,Patient Education Room,Education,30,8,Digital display,AV,Yes,"Patient consultation (on site), Patient consultation (virtual on site), Teaching"
+1095,Nursing Education Room,Education,40,15,Projector,Full AV,Yes,"Patient consultation (on site), Patient consultation (virtual on site), Teaching"
+1097,Patient Education Room,Education,30,8,Digital display,AV,Yes,"Patient consultation (on site), Patient consultation (virtual on site), Teaching"
+1100,Doctor Office #1001,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1101,Doctor Office #1002,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1102,Doctor Office #1003,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1103,Doctor Office #1004,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1104,Doctor Office #1005,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1105,Doctor Office #1006,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1106,Doctor Office #1007,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1107,Doctor Office #1008,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1108,Doctor Office #1009,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1109,Doctor Office #1010,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1110,Doctor Office #1011,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1111,Doctor Office #1012,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1112,Doctor Office #1013,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1113,Doctor Office #1014,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1114,Doctor Office #1015,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1115,Doctor Office #1016,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1116,Doctor Office #1017,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1117,Doctor Office #1018,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1118,Doctor Office #1019,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"
+1119,Doctor Office #1020,Admin,14,2,"Desk, computer",None,Yes,"Administration, Patient consultation (virtual on site), Private"

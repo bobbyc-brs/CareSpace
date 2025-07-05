@@ -96,7 +96,16 @@ const getMonthData = (date) => {
 
 const getBookingsForDate = (date) => {
     const dateStr = formatDate(date);
-    return bookings.filter(booking => booking.Date === dateStr);
+    return bookings.filter(booking => {
+        // Handle different timestamp formats
+        const startTimestamp = booking['Start Timestamp'] || booking.startTime;
+        if (!startTimestamp) return false;
+        
+        // Parse the timestamp and compare dates
+        const bookingDate = new Date(startTimestamp);
+        const bookingDateStr = formatDate(bookingDate);
+        return bookingDateStr === dateStr;
+    });
 };
 
 const renderCalendar = () => {
@@ -134,6 +143,10 @@ const renderCalendar = () => {
         dayNumber.textContent = date.getDate();
         dayElement.appendChild(dayNumber);
         
+        // Bookings container
+        const bookingsContainer = document.createElement('div');
+        bookingsContainer.className = 'bookings-container';
+        
         // Bookings for this day
         const dayBookings = getBookingsForDate(date);
         const filteredBookings = selectedCategory 
@@ -147,12 +160,20 @@ const renderCalendar = () => {
             const space = spaces.find(s => s['Space ID'] === booking['Space ID']);
             if (!space) return;
             
+            const startTimestamp = booking['Start Timestamp'] || booking.startTime;
+            const endTimestamp = booking['End Timestamp'] || booking.endTime;
+            
+            if (!startTimestamp || !endTimestamp) return;
+            
             const bookingElement = document.createElement('div');
             bookingElement.className = `booking-item ${getCategoryClass(space.Category)}`;
-            bookingElement.textContent = `${space.Name} (${formatTime(booking['Start Timestamp'])}-${formatTime(booking['End Timestamp'])})`;
+            bookingElement.textContent = `${space.SpaceName} (${formatTime(startTimestamp)}-${formatTime(endTimestamp)})`;
+            bookingElement.title = `${space.SpaceName} - ${formatDate(new Date(startTimestamp))} (${formatTime(startTimestamp)}-${formatTime(endTimestamp)})`;
             bookingElement.onclick = () => showBookingDetails(booking, space);
-            dayElement.appendChild(bookingElement);
+            bookingsContainer.appendChild(bookingElement);
         });
+        
+        dayElement.appendChild(bookingsContainer);
         
         calendarGrid.appendChild(dayElement);
     });
@@ -164,25 +185,27 @@ const showBookingDetails = (booking, space) => {
     const modalTitle = document.getElementById('modal-title');
     const modalContent = document.getElementById('modal-content');
     
-    modalTitle.textContent = `Booking: ${space.Name}`;
+    modalTitle.textContent = `Booking: ${space.SpaceName}`;
     
-    const startTime = formatTime(booking['Start Timestamp']);
-    const endTime = formatTime(booking['End Timestamp']);
-    const duration = booking['Duration (hours)'];
+    const startTimestamp = booking['Start Timestamp'] || booking.startTime;
+    const endTimestamp = booking['End Timestamp'] || booking.endTime;
+    const startTime = formatTime(startTimestamp);
+    const endTime = formatTime(endTimestamp);
+    const duration = booking['Duration (hours)'] || booking.duration;
     
     modalContent.innerHTML = `
         <div class="space-y-4">
             <div class="grid grid-cols-2 gap-4">
                 <div>
                     <h4 class="font-semibold text-gray-900">Space Details</h4>
-                    <p class="text-sm text-gray-600">Name: ${space.Name}</p>
+                    <p class="text-sm text-gray-600">Name: ${space.SpaceName}</p>
                     <p class="text-sm text-gray-600">Category: ${space.Category}</p>
                     <p class="text-sm text-gray-600">Capacity: ${space['Capacity (people)']} people</p>
                     <p class="text-sm text-gray-600">Area: ${space['Area (sqm)']} sqm</p>
                 </div>
                 <div>
                     <h4 class="font-semibold text-gray-900">Booking Details</h4>
-                    <p class="text-sm text-gray-600">Date: ${booking.Date}</p>
+                    <p class="text-sm text-gray-600">Date: ${formatDate(new Date(startTimestamp))}</p>
                     <p class="text-sm text-gray-600">Time: ${startTime} - ${endTime}</p>
                     <p class="text-sm text-gray-600">Duration: ${duration} hours</p>
                 </div>
