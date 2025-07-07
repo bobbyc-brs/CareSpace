@@ -64,3 +64,19 @@ All of our non-technical (and technical) members learned how to properly use **W
 
 **\#\# What's next for CareSpace**  
 Next, CareSpace is heading back to CHEO where we are looking to iterate with the Chief Innovation Officer who inspired the project in the first place. Our end goal is to find space for doctors to do their work, and ultimately to help increase CHEO’s capacity for life-saving care for children. 
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Support
+
+For support and questions, please open an issue in the repository.
