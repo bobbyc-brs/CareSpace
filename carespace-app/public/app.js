@@ -321,16 +321,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Check server health periodically
-    setInterval(async () => {
-        try {
-            await apiCall('/health');
-            document.querySelector('#server-status .w-2').className = 'w-2 h-2 bg-green-500 rounded-full mr-2';
-            document.querySelector('#server-status span').textContent = 'Server Online';
-        } catch (error) {
-            document.querySelector('#server-status .w-2').className = 'w-2 h-2 bg-red-500 rounded-full mr-2';
-            document.querySelector('#server-status span').textContent = 'Server Offline';
+    let healthCheckInterval = null;
+    const startHealthCheck = () => {
+        if (healthCheckInterval) {
+            clearInterval(healthCheckInterval);
         }
-    }, 30000); // Check every 30 seconds
+        healthCheckInterval = setInterval(async () => {
+            try {
+                await apiCall('/health');
+                const statusElement = document.querySelector('#server-status .w-2');
+                const textElement = document.querySelector('#server-status span');
+                if (statusElement && textElement) {
+                    statusElement.className = 'w-2 h-2 bg-green-500 rounded-full mr-2';
+                    textElement.textContent = 'Server Online';
+                }
+            } catch (error) {
+                const statusElement = document.querySelector('#server-status .w-2');
+                const textElement = document.querySelector('#server-status span');
+                if (statusElement && textElement) {
+                    statusElement.className = 'w-2 h-2 bg-red-500 rounded-full mr-2';
+                    textElement.textContent = 'Server Offline';
+                }
+            }
+        }, 60000); // Check every 60 seconds instead of 30
+    };
+    
+    // Start health check
+    startHealthCheck();
 });
 
 // Make functions globally available for onclick handlers

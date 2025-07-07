@@ -1,54 +1,131 @@
-# Node.js GUI Application
+# CareSpace - Healthcare Space Management System
 
-A modern Node.js application with a beautiful GUI for managing users and tasks, built with Express.js and a responsive frontend.
+A comprehensive Node.js application for managing doctors, spaces, and bookings in healthcare facilities, featuring an intelligent chatbot interface and calendar system.
 
 ## Features
 
-- 🖥️ **Modern GUI**: Beautiful, responsive web interface built with Tailwind CSS
-- 📊 **Dashboard**: Real-time statistics and overview cards
-- 👥 **User Management**: Add, view, and delete users with full CRUD operations
-- ✅ **Task Management**: Create, update, and delete tasks with status tracking
-- 🔄 **Real-time Updates**: Live data synchronization between frontend and backend
+- 🏥 **Doctor Management**: Complete doctor profiles with specialties and availability
+- 🏢 **Space Management**: Comprehensive space inventory with equipment and capacity
+- 📅 **Booking System**: Advanced booking management with conflict detection
+- 🤖 **AI-Powered Chatbot**: Intelligent booking assistant with OpenAI integration
+- 📊 **Calendar View**: Visual calendar interface for booking management
+- 🎯 **AI Recommendations**: Smart space recommendations based on activity requirements
 - 📱 **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
-- 🚀 **RESTful API**: Complete REST API with proper HTTP methods
-- 📈 **Statistics**: Real-time statistics and analytics
+- 🔄 **Real-time Updates**: Live data synchronization between frontend and backend
+- 📈 **Statistics Dashboard**: Real-time analytics and reporting
 - 🔔 **Notifications**: Toast notifications for user feedback
 
-## Tech Stack
+## Tech Stack & Tools
 
-### Backend
-- **Node.js** with Express.js
-- **CORS** for cross-origin requests
-- **Morgan** for HTTP request logging
-- **Dotenv** for environment variables
+### Backend Technologies
+- **Node.js** (v18.20.8) - JavaScript runtime environment
+- **Express.js** - Web application framework
+- **CORS** - Cross-origin resource sharing middleware
+- **Morgan** - HTTP request logger middleware
+- **Dotenv** - Environment variables management
+- **CSV Parser** - CSV file reading and writing
+- **Path** - File path utilities
+- **FS** - File system operations
 
-### Frontend
-- **HTML5** with semantic markup
-- **Tailwind CSS** for modern styling
-- **Vanilla JavaScript** for interactivity
-- **Font Awesome** for icons
+### Frontend Technologies
+- **HTML5** - Semantic markup structure
+- **CSS3** - Styling and layout
+- **Tailwind CSS** - Utility-first CSS framework
+- **Vanilla JavaScript** - Frontend interactivity
+- **Font Awesome** - Icon library
+- **Responsive Design** - Mobile-first approach
+
+### AI & Machine Learning
+- **OpenAI GPT-3.5-turbo** - Natural language processing for date/time parsing
+- **OpenAI API** - AI-powered space recommendations
+- **JSON** - Data exchange format for AI responses
+
+### Data Management
+- **CSV Files** - Data storage format
+  - `Doctors.csv` - Doctor profiles and specialties
+  - `Spaces.csv` - Space inventory and specifications
+  - `SpaceBookings.csv` - Booking records
+  - `DoctorCalendars.csv` - Doctor availability schedules
+
+### Development Tools
+- **npm** - Package manager
+- **Git** - Version control
+- **ESLint** - Code linting (if configured)
+- **Nodemon** - Development server with auto-restart
+
+### API & Communication
+- **RESTful API** - Complete REST API with proper HTTP methods
+- **JSON** - Data exchange format
+- **HTTP/HTTPS** - Communication protocols
+- **WebSocket** - Real-time communication (if implemented)
+
+### UI/UX Components
+- **Modal Dialogs** - Interactive popup forms
+- **Toast Notifications** - User feedback system
+- **Loading Indicators** - User experience enhancement
+- **Responsive Tables** - Data display components
+- **Form Validation** - Input validation and error handling
+
+### Security & Performance
+- **CORS Configuration** - Cross-origin security
+- **Input Validation** - Data sanitization
+- **Error Handling** - Comprehensive error management
+- **Health Checks** - System monitoring endpoints
+
+### File Structure
+```
+carespace-app/
+├── data/                    # CSV data files
+│   ├── Doctors.csv         # Doctor profiles
+│   ├── Spaces.csv          # Space inventory
+│   ├── SpaceBookings.csv   # Booking records
+│   └── DoctorCalendars.csv # Availability schedules
+├── public/                 # Frontend files
+│   ├── index.html          # Main dashboard
+│   ├── chatbot.html        # Chatbot interface
+│   ├── calendar.html       # Calendar view
+│   ├── app.js              # Main frontend logic
+│   ├── chatbot.js          # Chatbot functionality
+│   ├── calendar.js         # Calendar functionality
+│   └── prompts.json        # AI prompts configuration
+├── server.js               # Express server
+├── package.json            # Dependencies and scripts
+├── .env                    # Environment variables
+└── README.md              # Project documentation
+```
 
 ## API Endpoints
 
-### Health Check
+### Health & Monitoring
 - `GET /api/health` - Server health status
 
-### Users
-- `GET /api/users` - Get all users
-- `GET /api/users/:id` - Get user by ID
-- `POST /api/users` - Create new user
-- `PUT /api/users/:id` - Update user
-- `DELETE /api/users/:id` - Delete user
+### Doctor Management
+- `GET /api/doctors` - Get all doctors
+- `GET /api/doctors/:id` - Get doctor by ID
+- `GET /api/doctors/specialty/:specialty` - Get doctors by specialty
+- `GET /api/doctors/available` - Get available doctors
 
-### Tasks
-- `GET /api/tasks` - Get all tasks
-- `GET /api/tasks/:id` - Get task by ID
-- `POST /api/tasks` - Create new task
-- `PUT /api/tasks/:id` - Update task
-- `DELETE /api/tasks/:id` - Delete task
+### Space Management
+- `GET /api/spaces` - Get all spaces
+- `GET /api/spaces/:id` - Get space by ID
+- `GET /api/spaces/bookable` - Get bookable spaces
+- `GET /api/spaces/category/:category` - Get spaces by category
+
+### Booking Management
+- `GET /api/bookings` - Get all bookings
+- `GET /api/bookings/space/:spaceId` - Get bookings by space
+- `GET /api/bookings/date/:date` - Get bookings by date
+
+### Chatbot & AI
+- `GET /api/chatbot/search-doctors` - Search doctors
+- `GET /api/chatbot/available-spaces` - Find available spaces
+- `GET /api/chatbot/suggestions` - Get booking suggestions
+- `POST /api/openai/parse-datetime` - Parse natural language dates
+- `POST /api/openai/recommendations` - Get AI space recommendations
 
 ### Statistics
-- `GET /api/stats` - Get application statistics
+- `GET /api/stats` - Get overall statistics
+- `GET /api/stats/specialties` - Get specialty statistics
 
 ## Getting Started
 
@@ -56,13 +133,14 @@ A modern Node.js application with a beautiful GUI for managing users and tasks, 
 
 - Node.js (version 14 or higher)
 - npm or yarn
+- OpenAI API key (optional, for enhanced features)
 
 ### Installation
 
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd nodejs-gui-app
+cd carespace-app
 ```
 
 2. Install dependencies:
@@ -72,81 +150,53 @@ npm install
 
 3. Create a `.env` file in the root directory:
 ```bash
+# Server Configuration
 PORT=3000
 NODE_ENV=development
+
+# OpenAI API Configuration (Optional - for enhanced date/time parsing)
+# Get your API key from: https://platform.openai.com/api-keys
+OPENAI_API_KEY=your-openai-api-key-here
 ```
 
 4. Start the development server:
 ```bash
-npm run dev
+npm start
 ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Project Structure
-
-```
-nodejs-gui-app/
-├── public/
-│   ├── index.html          # Main HTML file
-│   └── app.js              # Frontend JavaScript
-├── server.js               # Express server
-├── package.json            # Dependencies and scripts
-├── .env                    # Environment variables
-└── README.md              # Project documentation
-```
 
 ## Usage
 
 ### Dashboard Overview
 
-The application opens with a dashboard showing:
-- **Total Users**: Number of registered users
-- **Total Tasks**: Number of tasks in the system
-- **Completed Tasks**: Tasks marked as completed
-- **Pending Tasks**: Tasks awaiting completion
+The application provides three main interfaces:
 
-### Managing Users
+1. **Main Dashboard** (`/`) - Overview of doctors, spaces, and bookings
+2. **Chatbot Interface** (`/chatbot.html`) - AI-powered booking assistant
+3. **Calendar View** (`/calendar.html`) - Visual booking calendar
 
-1. Click on the "Users" tab
-2. View all users in the system
-3. Click "Add User" to create a new user
-4. Fill in the form with name, email, and optional age
-5. Delete users using the trash icon
+### Chatbot Features
 
-### Managing Tasks
+- **Natural Language Processing**: Understand booking requests in plain English
+- **AI Recommendations**: Get intelligent space suggestions
+- **Automatic Date Parsing**: Convert natural language to structured dates
+- **Activity Matching**: Match activities to appropriate spaces
+- **Booking Management**: Create and manage bookings through conversation
 
-1. Click on the "Tasks" tab
-2. View all tasks with their current status
-3. Click "Add Task" to create a new task
-4. Fill in the form with title, description, and status
-5. Update task status using the dropdown
-6. Delete tasks using the trash icon
+### Calendar Features
 
-### API Testing
-
-You can test the API endpoints using tools like Postman or curl:
-
-```bash
-# Get all users
-curl http://localhost:3000/api/users
-
-# Create a new user
-curl -X POST http://localhost:3000/api/users \
-  -H "Content-Type: application/json" \
-  -d '{"name":"John Doe","email":"john@example.com","age":30}'
-
-# Get statistics
-curl http://localhost:3000/api/stats
-```
+- **Visual Calendar**: Monthly view of all bookings
+- **Category Filtering**: Filter bookings by activity type
+- **Booking Details**: Click to view detailed booking information
+- **Responsive Design**: Works on all device sizes
 
 ## Development
 
 ### Available Scripts
 
 - `npm start` - Start the production server
-- `npm run dev` - Start the development server with nodemon
-- `npm test` - Run tests (not implemented yet)
+- `npm run dev` - Start the development server with nodemon (if configured)
 
 ### Environment Variables
 
@@ -155,35 +205,26 @@ Create a `.env` file in the root directory:
 ```env
 PORT=3000
 NODE_ENV=development
+OPENAI_API_KEY=your-openai-api-key-here
 ```
 
 ### Adding New Features
 
 1. **New API Endpoints**: Add routes in `server.js`
-2. **Frontend Features**: Modify `public/app.js` and `public/index.html`
+2. **Frontend Features**: Modify JavaScript files in `public/`
 3. **Styling**: Update Tailwind classes in HTML files
+4. **AI Prompts**: Update `public/prompts.json` for chatbot responses
 
 ## Customization
 
 ### Adding New Data Types
 
-To add a new data type (e.g., Projects):
+To add a new data type (e.g., Equipment):
 
-1. Add data array in `server.js`:
-```javascript
-let projects = [
-  { id: 1, name: 'Project A', description: 'Description', status: 'active' }
-];
-```
-
-2. Add API endpoints:
-```javascript
-app.get('/api/projects', (req, res) => {
-  res.json(projects);
-});
-```
-
-3. Add frontend functionality in `app.js`
+1. Add data array in `server.js`
+2. Add API endpoints
+3. Add frontend functionality
+4. Update CSV files if needed
 
 ### Styling Changes
 
@@ -192,48 +233,6 @@ The application uses Tailwind CSS. You can:
 1. Modify classes in HTML files
 2. Add custom CSS in the `<style>` section
 3. Extend Tailwind configuration if needed
-
-### Database Integration
-
-Currently, the app uses in-memory storage. To add a database:
-
-1. Install a database driver (e.g., `mongoose` for MongoDB)
-2. Replace in-memory arrays with database queries
-3. Add proper error handling for database operations
-
-## Deployment
-
-### Production Build
-
-1. Set environment variables:
-```bash
-NODE_ENV=production
-PORT=3000
-```
-
-2. Start the server:
-```bash
-npm start
-```
-
-### Docker Deployment
-
-Create a `Dockerfile`:
-
-```dockerfile
-FROM node:16-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm install --production
-COPY . .
-EXPOSE 3000
-CMD ["npm", "start"]
-```
-
-### Environment Variables for Production
-
-- `PORT`: Server port (default: 3000)
-- `NODE_ENV`: Environment (development/production)
 
 ## Contributing
 
@@ -245,8 +244,8 @@ CMD ["npm", "start"]
 
 ## License
 
-This project is open source and available under the [ISC License](LICENSE).
+This project is licensed under the MIT License.
 
 ## Support
 
-For support or questions, please open an issue on the GitHub repository. 
+For support and questions, please open an issue in the repository. 

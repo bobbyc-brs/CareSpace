@@ -1,0 +1,83 @@
+{
+  "conversation": {
+    "initial_question": "Hi there! What would you like to do today?",
+    "timing_question": "When would you need the space, please? Kindly specify the date and time (for example, '2025-07-15 2:00 PM' or 'tomorrow at 2 PM').",
+    "duration_question": "How long would you like the space for? Please let me know the duration (for example, '2 hours', '1 hour', or '30 minutes').",
+    "no_availability": "Oh no! I'm sorry, but it looks like there aren't any spaces available for that time. Could you kindly try a different time, date, or activity type?",
+    "doctor_required": "Sorry about this! I'll need to know which doctor you are before I can show your bookings. Would you mind selecting a doctor first?",
+    "bookings_error": "Sorry! I wasn't able to retrieve your bookings just now. Would you mind giving it another try in a little bit?",
+    "bookings_fetch_error": "Oops! I ran into a hiccup while trying to retrieve your bookings. Please try again shortly. Thanks so much!",
+    "booking_success": "✅ Booking Confirmed!\n\n📅 Space: {spaceName}\n📆 Date: {date}\n⏰  Time:  {time}\n⏱️  Duration:  {duration} hour{durationPlural}\n🎯  Activity:  {activity}\n\nYour booking has been successfully made—thanks kindly!",
+    "booking_failed": "❌ Booking Unsuccessful\n\nOh dear! I wasn't able to book {spaceName} for you. Would you mind giving it another go, or perhaps contacting support for help?",
+    "booking_error": "❌ Booking Error \n\nI'm really sorry, but something went wrong while trying to book {spaceName}. Please try again later if you don't mind.",
+    "processing_error": "Sorry about that! I'm having a bit of trouble processing your request at the moment. Would you kindly try again later?",
+    "new_doctor_greeting": "Hello {doctorName}!  I am the booking bot for Fairy Dust hospital. What kind of booking can I make for you today?"
+  },
+  "activities": {
+    "options": [
+      { "label": "🔬 Lab work", "value": "Lab work" },
+      { "label": "👥 Patient consultation (on site)", "value": "Patient consultation (on site)" },
+      { "label": "💻 Patient consultation (virtual from home)", "value": "Patient consultation (virtual from home)" },
+      { "label": "🖥️ Patient consultation (virtual on site)", "value": "Patient consultation (virtual on site)" },
+      { "label": "📚 Research", "value": "Research" },
+      { "label": "😌 Decompression Room", "value": "Decompression Room" },
+      { "label": "📋 Administration", "value": "Administration" },
+      { "label": "🔒 Private", "value": "Private" },
+      { "label": "🎓 Teaching", "value": "Teaching" }
+    ]
+  },
+  "duration_options": [
+    { "label": "⏰ 1 Hour", "value": "1" },
+    { "label": "⏰ 2 Hours", "value": "2" },
+    { "label": "⏰ 3 Hours", "value": "3" },
+    { "label": "⏰ 4 Hours", "value": "4" },
+    { "label": "⏰ 6 Hours", "value": "6" },
+    { "label": "⏰ 8 Hours", "value": "8" }
+  ],
+  "responses": {
+    "hello": "Hello! I'm {doctorName}, a {specialty}. How can I help you today?",
+    "how_are_you": "I'm doing well, thank you for asking! How can I assist you today?",
+    "help": "I'm here to help you with booking spaces, checking availability, and managing your schedule. What would you like to do?",
+    "booking": "I can help you book spaces for your activities. What type of activity do you need to do?",
+    "schedule": "I can help you check your schedule and manage your bookings. Would you like to see your current bookings?",
+    "availability": "I can check space availability for you. What type of activity and when do you need it?",
+    "default": "I'm {doctorName}, and I'm here to help you with space bookings and scheduling. You can ask me about:\n\n• Booking spaces for activities\n• Checking your schedule\n• Finding available spaces\n• Managing your appointments\n\nWhat would you like to do?"
+  },
+  "bookings": {
+    "no_bookings": "🎯  Your Schedule - {doctorName} \n\n<div class=\"bg-gray-50 border border-gray-200 rounded-lg p-4 mb-4\">\n<div class=\"text-center text-gray-600 mb-4\">\n📅  No Bookings Scheduled \n</div>\n<div class=\"bg-white border border-gray-300 rounded-lg p-6 text-center\">\n<div class=\"text-2xl mb-2\">📭</div>\n<div class=\"font-semibold text-gray-700 mb-4\"> Empty Calendar </div>\n<div class=\"text-sm text-gray-600 mb-4\">\nYou don't have any bookings scheduled at the moment. This could be because:\n</div>\n<div class=\"text-sm text-gray-600 text-left max-w-md mx-auto\">\n• You haven't made any bookings yet<br>\n• Your existing bookings weren't assigned to a specific doctor<br>\n• You're a new doctor in the system\n</div>\n<div class=\"mt-4 text-sm text-gray-600\">\nWould you like to make a new booking? I can help you find available spaces and schedule appointments.\n</div>\n</div>\n</div>",
+    "header": "🎯  Your Schedule - {doctorName} \n\n",
+    "date_separator": "<div class=\"border-t border-gray-300 my-4\"></div>\n",
+    "date_header": "<div class=\"bg-blue-50 border border-blue-200 rounded-lg p-3 mb-3\">\n<div class=\"font-semibold text-blue-800\">📅  {date} </div>\n</div>",
+    "booking_card_start": "<div class=\"bg-white border border-gray-300 rounded-lg p-4 mb-3 shadow-sm\">\n",
+    "booking_card_end": "</div>\n",
+    "time_format": "<div class=\"text-blue-600 font-semibold mb-2\">⏰  {timeRange} </div>\n",
+    "space_format": "<div class=\"text-green-600 font-semibold mb-2\">📍  {spaceName} </div>\n",
+    "activity_format": "<div class=\"text-purple-600 font-semibold mb-2\">🎯  {activity} </div>\n",
+    "notes_format": "<div class=\"text-gray-600 text-sm mt-2\">📝 {notes}</div>\n",
+    "summary": "<div class=\"bg-gray-100 border border-gray-300 rounded-lg p-3 mt-4\">\n<div class=\"font-semibold text-gray-700\">📊  Summary:  {count} booking{plural} scheduled</div>\n</div>\n"
+  },
+  "booking_keywords": [
+    "my booking",
+    "my bookings", 
+    "show my booking",
+    "show my bookings",
+    "my schedule",
+    "my appointments",
+    "my calendar",
+    "what do i have",
+    "when am i",
+    "my meetings",
+    "show me my booking",
+    "show me my bookings",
+    "what are my bookings",
+    "what are my appointments"
+  ],
+  "response_keywords": {
+    "hello": ["hello", "hi"],
+    "how_are_you": ["how are you"],
+    "help": ["help"],
+    "booking": ["booking", "book"],
+    "schedule": ["schedule", "appointment"],
+    "availability": ["availability", "available"]
+  }
+} 

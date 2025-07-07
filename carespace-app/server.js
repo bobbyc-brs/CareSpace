@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const path = require('path');
 const fs = require('fs');
 const csv = require('csv-parse/sync');
+const fetch = require('node-fetch');
 require('dotenv').config();
 
 const app = express();
@@ -684,22 +685,22 @@ app.get('/api/chatbot/suggestions', (req, res) => {
     // Generate response message
     let message = '';
     if (suggestions.doctors.length > 0) {
-      message += `👨‍⚕️ **Available Doctors:** ${suggestions.doctors.length} found\n`;
+              message += `👨‍⚕️ Available Doctors: ${suggestions.doctors.length} found\n`;
       suggestions.doctors.forEach(doctor => {
         const availability = suggestions.doctorAvailability.find(av => av.doctorId === doctor.Id);
         if (availability) {
-          message += `• **${doctor.Name}** (${doctor.Specialty}) - ${availability.available ? '✅ Available' : '❌ Unavailable'}\n`;
+          message += `• ${doctor.Name} (${doctor.Specialty}) - ${availability.available ? '✅ Available' : '❌ Unavailable'}\n`;
         }
       });
       message += '\n';
     }
     
     if (suggestions.spaces.length > 0) {
-      message += `🏢 **Available Spaces:** ${suggestions.spaces.length} found\n`;
+              message += `🏢 Available Spaces: ${suggestions.spaces.length} found\n`;
     } else {
-      message += `❌ **No spaces available** for the requested time.\n`;
+              message += `❌ No spaces available for the requested time.\n`;
       if (suggestions.alternativeSlots.length > 0) {
-        message += `💡 **Alternative time slots available** for some spaces.\n`;
+                  message += `💡 Alternative time slots available for some spaces.\n`;
       }
     }
     
@@ -714,6 +715,171 @@ app.get('/api/chatbot/suggestions', (req, res) => {
       success: false,
       error: 'Server error',
       message: err.message
+    });
+  }
+});
+
+// ===== OPENAI API ENDPOINTS =====
+
+// Parse natural language date/time using OpenAI
+app.post('/api/openai/parse-datetime', async (req, res) => {
+  try {
+    const { prompt, userInput } = req.body;
+    
+    if (!prompt || !userInput) {
+      return res.status(400).json({
+        success: false,
+        error: 'Missing required parameters',
+        message: 'Prompt and userInput are required'
+      });
+    }
+    
+    // Check if OpenAI API key is configured
+    const openaiApiKey = process.env.OPENAI_API_KEY;
+    if (!openaiApiKey) {
+      return res.status(500).json({
+        success: false,
+        error: 'OpenAI API key not configured',
+        message: 'Please set OPENAI_API_KEY environment variable'
+      });
+    }
+    
+    // Call OpenAI API
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${openaiApiKey}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'gpt-3.5-turbo',
+        messages: [
+          {
+            role: 'system',
+            content: 'You are a helpful assistant that parses natural language date/time inputs and returns structured JSON data. Always respond with valid JSON only.'
+          },
+          {
+            role: 'user',
+            content: prompt
+          }
+        ],
+        temperature: 0.1,
+        max_tokens: 200
+      })
+    });
+    
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(`OpenAI API error: ${errorData.error?.message || 'Unknown error'}`);
+    }
+    
+    const data = await response.json();
+    const aiResponse = data.choices[0]?.message?.content?.trim();
+    
+    if (!aiResponse) {
+      throw new Error('No response from OpenAI API');
+    }
+    
+    // Parse the JSON response from AI
+    let parsedData;
+    try {
+      parsedData = JSON.parse(aiResponse);
+    } catch (parseError) {
+      console.error('Failed to parse AI response as JSON:', aiResponse);
+      throw new Error('Invalid JSON response from AI');
+    }
+    
+    // Validate the parsed data
+    if (!parsedData.date || !parsedData.time) {
+      throw new Error('AI response missing required date or time fields');
+    }
+    
+    res.json({
+      success: true,
+      parsedData: parsedData,
+      originalInput: userInput
+    });
+    
+  } catch (error) {
+    console.error('OpenAI API error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to parse date/time with AI',
+      message: error.message
+    });
+  }
+});
+
+// General AI recommendations using OpenAI
+app.post('/api/openai/parse', async (req, res) => {
+  try {
+    const { prompt, maxTokens = 500 } = req.body;
+    
+    if (!prompt) {
+      return res.status(400).json({
+        success: false,
+        error: 'Missing required parameters',
+        message: 'Prompt is required'
+      });
+    }
+    
+    // Check if OpenAI API key is configured
+    const openaiApiKey = process.env.OPENAI_API_KEY;
+    if (!openaiApiKey) {
+      return res.status(500).json({
+        success: false,
+        error: 'OpenAI API key not configured',
+        message: 'Please set OPENAI_API_KEY environment variable'
+      });
+    }
+    
+    // Call OpenAI API
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${openaiApiKey}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'gpt-3.5-turbo',
+        messages: [
+          {
+            role: 'system',
+            content: 'You are a helpful assistant that provides recommendations and analysis. Always respond with valid JSON when requested.'
+          },
+          {
+            role: 'user',
+            content: prompt
+          }
+        ],
+        temperature: 0.3,
+        max_tokens: parseInt(maxTokens)
+      })
+    });
+    
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(`OpenAI API error: ${errorData.error?.message || 'Unknown error'}`);
+    }
+    
+    const data = await response.json();
+    const aiResponse = data.choices[0]?.message?.content?.trim();
+    
+    if (!aiResponse) {
+      throw new Error('No response from OpenAI API');
+    }
+    
+    res.json({
+      success: true,
+      data: aiResponse
+    });
+    
+  } catch (error) {
+    console.error('OpenAI API error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to get AI recommendations',
+      message: error.message
     });
   }
 });
@@ -808,25 +974,40 @@ app.get('/api/availability/check', (req, res) => {
                  usesLower.includes('research') || 
                  space.Category.toLowerCase().includes('research') ||
                  space.Category.toLowerCase().includes('lab');
-        } else if (activityLower.includes('consultation') || activityLower.includes('patient consultation')) {
+        } else if (activityLower.includes('patient consultation (on site)') || activityLower.includes('consultation') || activityLower.includes('patient consultation')) {
           return usesLower.includes('patient consultation') || 
                  usesLower.includes('consultation') ||
+                 space.Category.toLowerCase().includes('clinical') ||
+                 space.Category.toLowerCase().includes('education');
+        } else if (activityLower.includes('patient consultation (virtual from home)') || activityLower.includes('virtual consultation')) {
+          return usesLower.includes('virtual consultation') || 
+                 usesLower.includes('telemedicine') ||
+                 space.Category.toLowerCase().includes('clinical') ||
+                 space.Category.toLowerCase().includes('education');
+        } else if (activityLower.includes('patient consultation (virtual on site)') || activityLower.includes('virtual on site')) {
+          return usesLower.includes('virtual consultation') || 
+                 usesLower.includes('telemedicine') ||
                  space.Category.toLowerCase().includes('clinical') ||
                  space.Category.toLowerCase().includes('education');
         } else if (activityLower.includes('research')) {
           return usesLower.includes('research') || 
                  space.Category.toLowerCase().includes('research');
-        } else if (activityLower.includes('teaching') || activityLower.includes('education')) {
-          return usesLower.includes('teaching') || 
-                 usesLower.includes('education') ||
-                 space.Category.toLowerCase().includes('education');
+        } else if (activityLower.includes('decompression room') || activityLower.includes('decompression')) {
+          return usesLower.includes('decompression') || 
+                 space.Category.toLowerCase().includes('wellness') ||
+                 space.Category.toLowerCase().includes('rest');
         } else if (activityLower.includes('administration') || activityLower.includes('admin')) {
           return usesLower.includes('administration') || 
                  usesLower.includes('admin') ||
                  space.Category.toLowerCase().includes('admin');
         } else if (activityLower.includes('private')) {
           return usesLower.includes('private') || 
-                 space.Category.toLowerCase().includes('admin');
+                 space.Category.toLowerCase().includes('admin') ||
+                 space.Category.toLowerCase().includes('private');
+        } else if (activityLower.includes('teaching') || activityLower.includes('education')) {
+          return usesLower.includes('teaching') || 
+                 usesLower.includes('education') ||
+                 space.Category.toLowerCase().includes('education');
         } else {
           // If no specific activity match, return all bookable spaces
           return true;
@@ -944,6 +1125,7 @@ app.post('/api/bookings', (req, res) => {
     
     // Validate that the space exists and is bookable
     const space = spaces.find(s => s['Space ID'] === spaceId);
+    
     if (!space) {
       return res.status(404).json({
         success: false,
